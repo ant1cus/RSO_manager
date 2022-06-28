@@ -1,0 +1,88 @@
+{% extends 'main/base.html' %}
+
+{% block container %}
+<div class="fieldsetstyle-cssave">
+  <form action="" method="post" class="findform" id="simple_request">
+    {% csrf_token %}
+    <fieldset>
+      <legend align="center">Значения для поиска</legend>
+        {% for field in form %}
+            <div class="form-row">
+                {{field}}
+            </div>
+        {% endfor %}
+      <button type="button" id="simple_btn" onclick="finding_data()">Найти информацию</button>
+    </fieldset>
+  </form>
+  <form class="rezultform">
+      <fieldset>
+        <legend>Результаты поиска</legend>
+          <div id="result_form">
+            <label id="inform_label">Введите значения для поиска и нажмите кнопку «Найти информацию»</label>
+          </div>
+      </fieldset>
+  </form>
+</div>
+{% block javascript %}
+<script>
+    function finding_data() {
+        var myForm = $('#simple_request').serializeArray();
+        var out = false;
+        var dict_name = {'gk': 'гос. контракт', 'project': 'проект', 'order': 'заказ', 'complect': 'комплект',
+         'sn': 'серийный номер', 'name': 'модель', 'manufactur': 'изготовитель', 'secretnum': 'секретный номер',
+          'mark': 'марка'};
+        for (key in myForm) { //проходим циклом по массиву объектов
+            if (myForm[key].value && myForm[key].name != 'csrfmiddlewaretoken') {
+                out = true;
+                break;
+            }
+        }
+        if (out) {
+             $.ajax({
+                url: "{% url 'finding' %}", //url страницы (finding)
+                data: $('#simple_request').serializeArray(),  // Сериализуем объект
+                type: "POST", //метод отправки
+                success: function(response) { //Данные отправлены успешно
+                    console.log(response);
+                    var answer = $.parseJSON(response);
+                    document.getElementById('inform_label').remove();
+                    var name_req = '';
+                    for (name_val in answer) {
+                        console.log(name_val);
+                        for (key in myForm) { //проходим циклом по массиву объектов
+                            if (myForm[key].value == name_val) {
+                                name_req = dict_name[myForm[key].name];
+                                break;
+                                }
+                            }
+                        $('#result_form').append('Результаты поиска для ' + name_req + ' ' + name_val + ':');
+                        var transform = {"tag":"table", "children":[
+                            {"tag":"caption", "html":name_val, "children":[
+                                {"tag":"tr","children":[
+                                    {"tag":"th","html":'Гос. контракт'},
+                                    {"tag":"th","html":'Дата'},
+                                    {"tag":"th","html":'Департамент'}
+                                ]},
+                                {"tag":"tr","children":[
+                                    {"tag":"td","html":"${gk_fld}"},
+                                    {"tag":"td","html":"${date_fld}"},
+                                    {"tag":"td","html":"${department_fld}"}
+                                ]}
+                            ]}
+                        ]};
+                        console.log(typeof($.parseHTML(json2html.transform(answer[name_val],transform))));
+                        $('#result_form').append($.parseHTML(json2html.transform(answer[name_val],transform)));
+                    }
+                },
+                error: function(response) { // Данные не отправлены
+                    $('#result_form').replaceWith($.parseJSON(response));
+                    console.log('----------------------ALARM!--------------------------');
+                }
+            });
+            }
+        else
+            alert('Заполните хотя бы один параметр для поиска!');
+        }
+</script>
+{% endblock %}
+{% endblock %}

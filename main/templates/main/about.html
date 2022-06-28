@@ -1,0 +1,10 @@
+{% extends 'main/base.html' %}
+
+{% block container %}
+    <h1>Про нас</h1>
+    {% csrf_token %}
+    {% for el in obj_ %}
+        <div>{{ el }}</div>
+<!--        <h2>{{ el.department_fld }}</h2>-->
+    {% endfor %}
+{% endblock %}

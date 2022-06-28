@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+{% block javascript %}
+    <script>
+        $("#btn").click(function () {
+        var transform = {"tag":"table", "children":[
+            {"tag":"tbody","children":[
+                {"tag":"tr","children":[
+                    {"tag":"td","html":"${name}"},
+                    {"tag":"td","html":"${age}"}
+                ]}
+            ]}
+        ]};
+
+        var data = [
+            {'name':'Bob','age':40},
+            {'name':'Frank','age':15},
+            {'name':'Bill','age':65},
+            {'name':'Robert','age':24}
+        ];
+        console.log(typeof(json2html.transform(data,transform)));
+        $('#target_div').html(json2html.transform(data,transform));
+        });
+        function open_window() {
+            window.open('http://www.google.com');
+        }
+    </script>
+{% endblock %}
+{% block container %}
+<button id="btn">Нажать</button>
+<button onclick="open_window();">Открыть</button>
+<div id="target_div"></div>
+{% endblock %}

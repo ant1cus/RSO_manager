@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block container %}
+<div class="registration-cssave">
+    <form id="upload-container">
+        <img id="upload-image" src="{% static 'img/Upload.jpg'%}">
+        <div>
+            <input type="file" id="folder" webkitdirectory directory multiple/>
+            <label for="folder" id="load_label">Укажите месторасположение загружаемых заказов:</label>
+        </div>
+    </form>
+</div>
+<div align="center"><button class="btn" type="button" id="button">Загрузить данные</button></div>
+{% endblock %}

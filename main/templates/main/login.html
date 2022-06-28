@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block container %}
+<div class="registration-cssave">
+    <form method="post" action="">
+        {% csrf_token %}
+        <h3 class="text-center">Вход</h3>
+        <div class="form-group">
+            <input class="form-control item" type="text" name="username" maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control item" type="password" name="password" minlength="6" id="password" placeholder="Пароль" required>
+        </div>
+        <div class="form-group">
+            <button class="create-account" type="submit">Вход в аккаунт</button>
+        </div>
+
+        {% for message in messages %}
+            <div class="form-group">{{message}}</div>
+        {% endfor %}
+
+        <div class="form-group">
+            <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                Нет аккаунта?
+                <a href="/register" class="ml-2">Регистрация</a>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

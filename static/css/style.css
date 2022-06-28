@@ -1,0 +1,258 @@
+header {
+  display: flex;
+  height: 85px;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.menu {
+  flex-grow: 1;
+}
+
+.logo {
+  margin-right: 30px;
+  margin-left: 30px;
+  transition: .3s;
+}
+.logo:hover {
+  border-radius: 5px;
+  box-shadow: 0 15px 20px #6495ED;
+  color: white;
+  transform: scale(1.2, 1.2);
+}
+.menu a {
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-decoration: none;
+  color: black;
+  transition: .3s;
+}
+
+.menu ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2px 0 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+.menu li {
+  margin-right: 20px;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a:hover {
+  background: #0063b5;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px #6495ED;
+  color: white;
+  transform: translateY(-7px);
+}
+
+.menu a:active {
+    color: yellow !important;
+  }
+
+.log-reg {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #0063b5;
+  box-shadow: 0 15px 20px #6495ED;
+  color: white;
+  transform: translateY(-7px);
+}
+
+.registration-cssave form {
+  max-width:800px;
+  padding:50px 70px;
+  border-radius:10px;
+  box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color:#fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.registration-cssave .item {
+  border-radius:10px;
+  margin-bottom:25px;
+  padding:10px 20px;
+}
+.registration-cssave .create-account {
+  border-radius:30px;
+  padding:10px 20px;
+  font-size:18px;
+  font-weight:bold;
+  background-color:#0063b5;
+  border:none;
+  color:white;
+  margin-top:20px;
+}
+
+.fieldsetstyle-cssave {
+    display: flex; /* Обтекание по правому краю */
+    flex-flow: row nowrap;
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin-right: auto; /* Отступ справа */
+    margin-left: auto; /* Отступ слева */
+    clear:both;
+    text-align:center;
+    border-radius: 25px;
+   }
+
+.fieldsetstyle-cssave .findform {
+  flex: 1;
+  border-radius: 15px;
+}
+
+.fieldsetstyle-cssave .rezultform {
+  flex: 1;
+  border-radius: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+  border-radius: 15px;
+}
+
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+  text-align:left;
+}
+
+.form-row > input {
+  margin: 2px 0 0;
+  height: 26px;
+  flex: 2.5;
+  text-align: center;
+}
+
+#upload-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 400px;
+     height: 200px;
+     outline: 2px dashed #5d5d5d;
+     outline-offset: -12px;
+     background-color: #e0f2f7;
+     font-family: 'Segoe UI';
+     color: #1f3c44;
+}
+
+#upload-container img {
+     width: 40%;
+     margin-bottom: 20px;
+     user-select: none;
+}
+
+#upload-container div {
+     position: relative;
+     z-index: 10;
+}
+
+#upload-container input[type=file] {
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     position: absolute;
+     z-index: -10;
+}
+
+#upload-container input[type=file]:focus + label {
+    outline: 1px solid #212121;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+#upload-container label {
+     font-weight: bold;
+}
+
+#upload-container label:hover {
+     cursor: pointer;
+     text-decoration: underline;
+}
+
+#upload-container.dragover {
+     background-color: #fafafa;
+     outline-offset: -17px;
+}
+
+.btn {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 25px;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.btn:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.btn:hover {
+    background: #0063b5;
+    color: white;
+	transition: all 0.2s;
+	box-shadow: -1px 15px 20px #6495ED;
+}
+
+.btn:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #444;
+	cursor: not-allowed;
+}
