@@ -3,10 +3,11 @@ from django.contrib.auth import authenticate, login, logout
 from .form import CreateUserForm
 from .forms import SimpleFindingForm
 from django.contrib import messages
-from .models import GeneralInformationTbl
+from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 import json
+from django.forms.models import model_to_dict
 
 
 def is_ajax(request):
@@ -20,26 +21,41 @@ def greetings(request):
 def finding(request):
     if is_ajax(request=request):
         simple_finding_list = ['gk', 'project', 'order', 'complect', 'sn', 'name', 'manufactur', 'secretnum', 'mark']
-        fields = [request.POST.get(i) for i in simple_finding_list if request.POST.get(i)]
+        fields = [request.POST.get(i) for i in simple_finding_list]
         print(fields)
         print(len(fields))
         dict_ = {}
-        for i, field in enumerate(fields):
-            if field:
+        for i in [7, 4, 8, 2, 3, 5, 1, 0, 6]:
+            print(i)
+            if fields[i]:
                 if i == 0:
-                    result = [i for i in GeneralInformationTbl.objects.filter(gk_fld=field).values('gk_fld', 'date_fld',
-                                                                                                   'department_fld')]
+                    result = [i for i in GeneralInformationTbl.objects.filter(gk_fld=fields[i]).values('gk_fld',
+                                                                                                       'date_fld',
+                                                                                                       'department_fld')
+                              ]
                     print(result)
                     if result:
-                        dict_[field] = result
+                        dict_[fields[i]] = result
+                if i == 7:
+                    # res_ = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+                    # result = [i for i in SecretNumberTbl.objects.filter(secret_number_fld=fields[i]).values('secret_number_fld')
+                    #           ]
+                    # print(res_)
+                    # print(ConclusionTbl.objects.select_related('secret_number_fld').get(secret_number_fld=fields[i]))
+                    print([type(i) for i in list(DocumentTbl.objects.select_related('secret_number_fld').all())])
+                    # result = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i]).values()
+                    queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
+                    result = []
+                    for query in queryset:
+                        result.append({'Файл': query.file_location_fld, 'Исполнитель': query.executor_fld.worker_name_fld, 'Секретный номер': query.secret_number_fld.secret_number_fld})
+                    print('result: ', result)
+                    if result:
+                        dict_[fields[i]] = result
         print(dict_)
-        res_ = json.dumps(dict_, default=str)
-        print(res_)
         if dict_:
-            print(type(res_))
-            return JsonResponse(res_, status=200, safe=False)
+            return JsonResponse(json.dumps(dict_, default=str), status=200, safe=False)
         else:
-            return JsonResponse({"errors": 'Не найдено ни одно значение, удовлетворяющее условиям поиска'}, status=200)
+            return JsonResponse(json.dumps({"errors": 'Не найдено ни одно значение, удовлетворяющее условиям поиска'}), status=200, safe=False)
     # form = SimpleFindingForm()
     # obj_ = serializers.serialize("json", GeneralInformationTbl.objects.all())
     # simple_finding_list = ['gk', 'project', 'order', 'complect', 'sn', 'name', 'manufactur', 'secretnum', 'mark']

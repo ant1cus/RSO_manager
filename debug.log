@@ -2796,3 +2796,906 @@ TypeError: In order to allow non-dict objects to be serialized set the safe para
 2022-06-27 16:23:31,075 django.request WARNING  Not Found: /favicon.ico
 2022-06-27 16:27:03,326 django.request WARNING  Not Found: /favicon.ico
 2022-06-27 16:27:03,326 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 09:19:31,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-30 09:19:33,901 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 09:19:33,901 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 09:38:42,433 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 09:38:42,433 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:17:37,340 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:17:37,340 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:58:47,433 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:58:47,433 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:59:22,983 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:59:22,983 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:59:25,122 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 10:59:25,122 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:23:12,942 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:23:12,942 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:26:00,982 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:26:00,982 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:27:03,726 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:27:03,726 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:35:52,192 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:35:52,192 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:50:24,202 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:50:24,202 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:50:52,961 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 11:50:52,961 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 13:13:22,734 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 13:13:22,734 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:13:29,126 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:13:29,126 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:13:49,718 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:13:49,718 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:15:25,542 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:15:25,542 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:23:44,132 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-06-30 14:23:45,250 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-30 14:23:46,055 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:23:46,055 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:24:21,571 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-06-30 14:24:22,559 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-30 14:24:24,604 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:24:24,604 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:24:50,298 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:24:50,298 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:26:48,686 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:26:48,686 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:29:10,733 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:29:10,733 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:31:28,297 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:31:28,297 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:31:44,900 django.request WARNING  Not Found: /favicon.ico
+2022-06-30 14:31:44,900 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:12:41,231 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:12:43,786 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:12:43,786 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:12:54,710 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:12:54,710 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:13:19,286 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:13:19,286 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:14:03,304 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:14:04,323 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:14:06,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:14:06,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:14:11,952 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:14:11,952 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 28, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:14:45,569 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:14:46,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:14:47,234 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:14:47,234 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:14:52,899 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 29, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:14:52,899 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 29, in finding
+    if fields[i]:
+IndexError: list index out of range
+2022-07-01 15:15:30,984 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:15:32,013 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:15:32,711 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:15:32,711 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:15:36,275 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 31, in finding
+    result = [j for j in GeneralInformationTbl.objects.filter(gk_fld=fields[j]).values('gk_fld',
+NameError: name 'j' is not defined
+2022-07-01 15:15:36,275 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 31, in finding
+    result = [j for j in GeneralInformationTbl.objects.filter(gk_fld=fields[j]).values('gk_fld',
+NameError: name 'j' is not defined
+2022-07-01 15:16:40,027 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:16:41,072 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:16:41,712 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:16:41,712 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:29:12,669 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:29:13,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:37:23,244 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:45:52,019 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:45:53,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:46:42,729 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:46:43,740 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:47:09,769 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:47:10,785 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:47:17,077 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:47:17,077 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:48:21,174 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:48:22,286 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:49:30,843 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:49:30,843 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:49:31,754 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:49:32,796 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:49:55,258 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:49:56,643 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:50:34,146 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:50:35,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:50:37,897 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:50:37,897 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:51:39,212 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:51:40,245 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:58:59,643 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:59:00,768 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:59:01,907 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:59:01,907 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:59:05,115 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 15:59:05,115 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 15:59:32,524 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 15:59:33,584 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 15:59:34,051 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:59:34,051 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 15:59:35,345 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i]).values('secret_number_fld')
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 15:59:35,345 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i]).values('secret_number_fld')
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:02:56,088 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i]).values('secret_number_fld')
+AttributeError: 'SecretNumberTbl' object has no attribute 'values'
+2022-07-01 16:02:56,088 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i]).values('secret_number_fld')
+AttributeError: 'SecretNumberTbl' object has no attribute 'values'
+2022-07-01 16:03:19,492 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:03:20,557 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:03:21,021 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:03:21,021 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:03:22,868 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:03:22,868 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:03:54,951 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+TypeError: 'SecretNumberTbl' object is not iterable
+2022-07-01 16:03:54,951 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = [i for i in SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+TypeError: 'SecretNumberTbl' object is not iterable
+2022-07-01 16:04:22,300 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:04:23,358 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:04:25,078 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:04:25,078 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:04:27,268 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:04:27,268 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:05:02,466 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:05:03,608 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:05:30,569 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:05:31,780 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:05:33,626 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:05:33,626 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 39, in finding
+    result = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-01 16:05:41,792 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:05:42,848 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:06:39,612 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:06:40,912 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:08:59,717 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:09:00,869 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:09:29,270 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:09:30,609 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:18:37,683 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:18:37,683 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:21:32,228 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:21:33,506 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:21:48,657 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:21:49,919 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:22:35,388 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:22:37,011 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:22:45,676 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:22:47,142 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:23:20,010 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:23:21,402 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:25:16,295 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:25:17,756 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:26:53,879 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:26:55,018 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:27:16,052 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:27:17,153 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:27:26,340 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:27:26,340 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:27:28,551 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '10/10/1c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    result = SecretNumberTbl.objects.select_related().get(secret_number_id=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'secret_number_id' expected a number but got '10/10/1c'.
+2022-07-01 16:27:28,551 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '10/10/1c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    result = SecretNumberTbl.objects.select_related().get(secret_number_id=fields[i])
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'secret_number_id' expected a number but got '10/10/1c'.
+2022-07-01 16:27:46,790 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:27:47,796 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:27:48,254 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:27:48,254 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:33:41,966 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:33:43,127 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:33:45,926 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:33:45,926 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:33:47,759 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    result = SecretNumberTbl.objects.select_related().get(secret_number_fld=fields[i]).values()
+AttributeError: 'SecretNumberTbl' object has no attribute 'values'
+2022-07-01 16:33:47,759 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    result = SecretNumberTbl.objects.select_related().get(secret_number_fld=fields[i]).values()
+AttributeError: 'SecretNumberTbl' object has no attribute 'values'
+2022-07-01 16:36:42,393 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:36:43,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:37:15,274 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-01 16:37:16,527 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-01 16:37:19,446 django.request WARNING  Not Found: /favicon.ico
+2022-07-01 16:37:19,446 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:27:20,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:27:27,165 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:27:27,165 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:28:51,167 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:28:52,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:29:34,987 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:29:36,177 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:39:06,186 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:39:07,328 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:39:30,076 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:39:31,105 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:40:44,276 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:40:45,366 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:40:57,233 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:40:57,233 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:41:07,176 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '10/10/1c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    print(ConclusionTbl.objects.select_related('secret_number_fld').get(secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'secret_number_id' expected a number but got '10/10/1c'.
+2022-07-02 10:41:07,176 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '10/10/1c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    print(ConclusionTbl.objects.select_related('secret_number_fld').get(secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_lookups.py", line 154, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'secret_number_id' expected a number but got '10/10/1c'.
+2022-07-02 10:42:44,207 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:42:45,276 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:43:18,427 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:43:19,405 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:43:26,207 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-02 10:43:27,265 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-02 10:43:35,917 django.request WARNING  Not Found: /favicon.ico
+2022-07-02 10:43:35,917 django.request WARNING  Not Found: /favicon.ico
+2022-07-07 16:44:59,696 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-07 16:45:02,599 django.request WARNING  Not Found: /favicon.ico
+2022-07-07 16:45:02,599 django.request WARNING  Not Found: /favicon.ico
+2022-07-07 16:48:05,394 django.request WARNING  Not Found: /favicon.ico
+2022-07-07 16:48:05,394 django.request WARNING  Not Found: /favicon.ico
+2022-07-07 16:48:38,797 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'rso_db.conclusion_tbl' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 45, in finding
+    print(ConclusionTbl.objects.select_related('secret_number_fld').all())
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 296, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'rso_db.conclusion_tbl' doesn't exist")
+2022-07-07 16:48:38,797 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'rso_db.conclusion_tbl' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 45, in finding
+    print(ConclusionTbl.objects.select_related('secret_number_fld').all())
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 296, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'rso_db.conclusion_tbl' doesn't exist")
+2022-07-08 15:17:38,189 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 15:18:02,262 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 15:18:03,403 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 15:19:06,430 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 15:19:07,525 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 15:19:11,639 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 15:19:11,639 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 15:19:14,508 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(SecretNumberTbl.objects.select_related().get(secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-08 15:19:14,508 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(SecretNumberTbl.objects.select_related().get(secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+main.models.SecretNumberTbl.DoesNotExist: SecretNumberTbl matching query does not exist.
+2022-07-08 15:21:36,049 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 15:21:37,254 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:02:03,896 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:02:10,658 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:02:10,658 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:02:14,559 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(DocumentTbl.objects.filter(secret_number_fld__secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 105, in model_to_dict
+    opts = instance._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+2022-07-08 16:02:14,559 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(DocumentTbl.objects.filter(secret_number_fld__secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 105, in model_to_dict
+    opts = instance._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+2022-07-08 16:04:07,688 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:04:08,782 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:04:19,179 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:04:19,179 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:04:21,955 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(DocumentTbl.objects.filter(secret_number_fld__secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 105, in model_to_dict
+    opts = instance._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+2022-07-08 16:04:21,955 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 46, in finding
+    result = model_to_dict(DocumentTbl.objects.filter(secret_number_fld__secret_number_fld=fields[i]))
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 105, in model_to_dict
+    opts = instance._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+2022-07-08 16:05:16,262 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:05:17,278 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:05:24,554 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:05:24,554 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:06:57,142 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:06:58,064 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:07:07,900 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:07:07,900 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:08:53,604 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:08:54,636 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:09:05,285 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:09:05,285 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:09:54,936 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:09:55,982 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:10:02,764 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:10:02,764 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:15:08,594 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:15:09,595 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:15:59,415 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:15:59,415 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:29:25,186 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:29:26,413 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:33:48,000 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:33:49,047 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:34:01,939 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:34:03,126 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:34:08,047 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:34:08,047 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:34:11,845 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 47, in finding
+    print('id: ', result.secret_number_fld)
+AttributeError: 'QuerySet' object has no attribute 'secret_number_fld'
+2022-07-08 16:34:11,845 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 47, in finding
+    print('id: ', result.secret_number_fld)
+AttributeError: 'QuerySet' object has no attribute 'secret_number_fld'
+2022-07-08 16:34:51,888 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 16:34:52,857 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 16:34:54,605 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:34:54,605 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 16:35:04,709 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 47, in finding
+    print('id: ', result.secret_number_fld.secret_number_fld)
+AttributeError: 'QuerySet' object has no attribute 'secret_number_fld'
+2022-07-08 16:35:04,709 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 47, in finding
+    print('id: ', result.secret_number_fld.secret_number_fld)
+AttributeError: 'QuerySet' object has no attribute 'secret_number_fld'
+2022-07-08 17:12:03,141 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:12:04,188 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:12:36,585 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:12:37,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:12:53,539 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:12:54,571 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:13:29,256 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:13:30,335 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:14:04,108 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:14:05,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:17:22,688 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:17:23,751 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:17:36,793 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 17:17:36,793 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 17:17:40,167 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 50, in finding
+    result.append({'Файл': query.file_location_fld, 'Исполнитель': query.executer_fld.worker_name_fld, 'Секретный номер': query.secret_number_fld.secret_number_fld})
+AttributeError: 'DocumentTbl' object has no attribute 'executer_fld'
+2022-07-08 17:17:40,167 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 50, in finding
+    result.append({'Файл': query.file_location_fld, 'Исполнитель': query.executer_fld.worker_name_fld, 'Секретный номер': query.secret_number_fld.secret_number_fld})
+AttributeError: 'DocumentTbl' object has no attribute 'executer_fld'
+2022-07-08 17:18:12,888 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-08 17:18:13,922 django.utils.autoreload INFO     Watching for file changes with StatReloader

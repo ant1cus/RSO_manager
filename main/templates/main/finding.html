@@ -43,35 +43,52 @@
                 data: $('#simple_request').serializeArray(),  // Сериализуем объект
                 type: "POST", //метод отправки
                 success: function(response) { //Данные отправлены успешно
-                    console.log(response);
+                    $("#result_form").html("");
                     var answer = $.parseJSON(response);
-                    document.getElementById('inform_label').remove();
-                    var name_req = '';
-                    for (name_val in answer) {
-                        console.log(name_val);
-                        for (key in myForm) { //проходим циклом по массиву объектов
-                            if (myForm[key].value == name_val) {
-                                name_req = dict_name[myForm[key].name];
-                                break;
+                    if ('errors' in answer) {
+                        $('#result_form').append(answer['errors']);
+                        }
+                    else {
+                        var name_req = '';
+                        for (name_val in answer) {
+                            for (key in myForm) { //проходим циклом по массиву объектов
+                                if (myForm[key].value == name_val) {
+                                    name_req = dict_name[myForm[key].name];
+                                    break;
+                                    }
                                 }
-                            }
-                        $('#result_form').append('Результаты поиска для ' + name_req + ' ' + name_val + ':');
-                        var transform = {"tag":"table", "children":[
-                            {"tag":"caption", "html":name_val, "children":[
-                                {"tag":"tr","children":[
-                                    {"tag":"th","html":'Гос. контракт'},
-                                    {"tag":"th","html":'Дата'},
-                                    {"tag":"th","html":'Департамент'}
-                                ]},
-                                {"tag":"tr","children":[
-                                    {"tag":"td","html":"${gk_fld}"},
-                                    {"tag":"td","html":"${date_fld}"},
-                                    {"tag":"td","html":"${department_fld}"}
-                                ]}
-                            ]}
-                        ]};
-                        console.log(typeof($.parseHTML(json2html.transform(answer[name_val],transform))));
-                        $('#result_form').append($.parseHTML(json2html.transform(answer[name_val],transform)));
+                            $('#result_form').append('Результаты поиска для ' + name_req + ' ' + name_val + ':');
+                            var output = '<table border="1" align="center">';
+                            const data = Object.entries(answer[name_val]);
+                            data.forEach(([key, value], index) => {
+                                var header_table = '';
+                                var var_table = '';
+                                for (key_val in value) {
+                                    header_table += '<th>' + key_val + '</th>';
+                                    var_table += '<td>' + value[key_val] + '</td>';
+                                    }
+                                if (index == 0) {
+                                    output += '<tr><th>№</th>' + header_table + '</tr>';
+                                    }
+                                output += '<tr><td>' + (index + 1) + '</td>' + var_table + '</tr>';
+                                })
+                            output += '</table>';
+                            $('#result_form').append(output);
+                        }
+<!--                        var transform = {"tag":"table", "align":"center", "border":"outset", "children":[-->
+<!--                                {"tag":"tr","children":[-->
+<!--                                    {"tag":"th","html":'Гос. контракт'},-->
+<!--                                    {"tag":"th","html":'Дата'},-->
+<!--                                    {"tag":"th","html":'Департамент'}-->
+<!--                                ]},-->
+<!--                                {"tag":"tr","children":[-->
+<!--                                    {"tag":"td","html":"${gk_fld}"},-->
+<!--                                    {"tag":"td","html":"${date_fld}"},-->
+<!--                                    {"tag":"td","html":"${department_fld}"}-->
+<!--                                ]}-->
+<!--                        ]};-->
+<!--                        console.log(typeof($.parseHTML(json2html.transform(answer[name_val],transform))));-->
+<!--                        $('#result_form').append($.parseHTML(json2html.transform(answer[name_val],transform)));-->
                     }
                 },
                 error: function(response) { // Данные не отправлены
