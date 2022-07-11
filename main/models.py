@@ -27,7 +27,6 @@ class AccompainingSheetTbl(models.Model):
     request_number = models.CharField(db_column='request number', max_length=50, blank=True, null=True)  # Field renamed to remove unsuitable characters.
     file_location_fld = models.CharField(max_length=500)
     order_fld = models.ForeignKey('OrderTbl', models.DO_NOTHING, db_column='order_fld')
-    document_type_fld = models.PositiveIntegerField()
     secret_number_fld = models.ForeignKey('SecretNumberTbl', models.DO_NOTHING, db_column='secret_number_fld', blank=True, null=True)
 
     class Meta:

@@ -3699,3 +3699,251 @@ Traceback (most recent call last):
 AttributeError: 'DocumentTbl' object has no attribute 'executer_fld'
 2022-07-08 17:18:12,888 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
 2022-07-08 17:18:13,922 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-08 17:18:25,493 django.request WARNING  Not Found: /favicon.ico
+2022-07-08 17:18:25,493 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 09:50:39,777 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 09:50:42,847 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 09:50:42,847 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 09:55:53,292 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 09:55:54,377 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:01:02,275 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:01:03,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:01:30,066 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:01:31,188 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:01:54,871 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 10:01:54,871 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 10:10:49,021 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\models.py changed, reloading.
+2022-07-11 10:10:50,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:29:05,758 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:29:07,116 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:30:35,137 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:30:36,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:31:52,488 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:31:53,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 10:33:12,909 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 10:33:13,926 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:33:43,120 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:33:52,722 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:33:52,722 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:36:10,076 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:36:11,124 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:36:20,054 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:36:20,054 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:36:22,923 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    acc_sheet = AccompainingSheetTbl.objects.get(order_fld=order_id).values()
+AttributeError: 'AccompainingSheetTbl' object has no attribute 'values'
+2022-07-11 12:36:22,923 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    acc_sheet = AccompainingSheetTbl.objects.get(order_fld=order_id).values()
+AttributeError: 'AccompainingSheetTbl' object has no attribute 'values'
+2022-07-11 12:36:50,470 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:36:51,611 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:39:23,187 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:39:24,320 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:39:30,080 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:39:30,080 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:40:01,544 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:40:02,708 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:40:40,645 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:40:41,802 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:40:45,002 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:40:45,002 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:41:17,012 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:41:18,074 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:41:20,890 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:41:20,890 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:43:16,143 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:43:17,159 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:43:23,268 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:43:23,268 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:43:25,700 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    acc_sheet = AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0].file_location_fld
+AttributeError: 'dict' object has no attribute 'file_location_fld'
+2022-07-11 12:43:25,700 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 44, in finding
+    acc_sheet = AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0].file_location_fld
+AttributeError: 'dict' object has no attribute 'file_location_fld'
+2022-07-11 12:44:24,509 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 12:44:25,457 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 12:44:32,925 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:44:32,925 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:57:52,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:57:52,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:58:52,917 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 12:58:52,917 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:00:32,418 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:00:32,418 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:03:30,156 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:03:30,156 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:06:33,337 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:06:33,337 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:06:50,550 django.request WARNING  Not Found: /finding/+ value[key_val] +
+2022-07-11 13:06:50,550 django.request WARNING  Not Found: /finding/+ value[key_val] +
+2022-07-11 13:07:37,328 django.request WARNING  Not Found: /finding/+ value[key_val] +
+2022-07-11 13:07:37,328 django.request WARNING  Not Found: /finding/+ value[key_val] +
+2022-07-11 13:12:32,833 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 13:12:32,833 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:36:08,675 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:36:09,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:38:43,048 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:38:44,174 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:38:57,987 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:38:58,910 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:39:10,878 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:39:11,909 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:39:36,217 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:39:37,358 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:42:36,836 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:42:37,946 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:42:57,058 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:42:58,241 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:43:11,290 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 14:43:12,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:45:19,775 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\urls.py changed, reloading.
+2022-07-11 14:45:20,791 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:47:03,216 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:47:03,216 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:47:12,195 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 14:47:12,195 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 14:48:17,784 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:48:17,784 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:48:56,185 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\urls.py changed, reloading.
+2022-07-11 14:48:57,357 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:49:00,748 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:49:00,748 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:49:06,395 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 14:49:06,395 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 14:49:44,211 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:49:44,211 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 14:50:07,202 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\urls.py changed, reloading.
+2022-07-11 14:50:08,170 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 14:50:36,912 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 14:50:36,912 django.request WARNING  Not Found: /finding/open_doc/
+2022-07-11 15:01:49,113 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:01:49,113 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:01:54,722 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:01:54,722 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:05:24,872 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:05:25,873 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:05:29,124 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 131, in open_doc
+    return redirect()
+TypeError: redirect() missing 1 required positional argument: 'to'
+2022-07-11 15:05:29,124 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\джанго\RSO_manager_db\main\views.py", line 131, in open_doc
+    return redirect()
+TypeError: redirect() missing 1 required positional argument: 'to'
+2022-07-11 15:05:59,717 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:06:00,997 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:06:03,115 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:06:03,115 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:18:45,532 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:18:46,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:18:53,116 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:18:53,116 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:23:48,715 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:23:49,927 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:23:58,440 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:23:58,440 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:24:04,285 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:24:04,285 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\nvfal\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.open_doc didn't return an HttpResponse object. It returned None instead.
+2022-07-11 15:26:27,667 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:26:28,840 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:26:35,199 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:26:35,199 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:26:40,150 django.request WARNING  Bad Request: /open_doc/
+2022-07-11 15:26:40,150 django.request WARNING  Bad Request: /open_doc/
+2022-07-11 15:26:56,071 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:26:57,022 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:26:58,830 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:26:58,830 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:51:35,843 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:51:35,843 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:53:04,336 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:53:04,336 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:54:03,384 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:54:03,384 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:55:17,730 django.utils.autoreload INFO     D:\джанго\RSO_manager_db\main\views.py changed, reloading.
+2022-07-11 15:55:19,137 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-11 15:55:23,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-11 15:55:23,356 django.request WARNING  Not Found: /favicon.ico

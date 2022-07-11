@@ -1,9 +1,12 @@
+import os
+import re
+
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .form import CreateUserForm
 from .forms import SimpleFindingForm
 from django.contrib import messages
-from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl
+from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 import json
@@ -37,17 +40,27 @@ def finding(request):
                     if result:
                         dict_[fields[i]] = result
                 if i == 7:
-                    # res_ = SecretNumberTbl.objects.get(secret_number_fld=fields[i])
-                    # result = [i for i in SecretNumberTbl.objects.filter(secret_number_fld=fields[i]).values('secret_number_fld')
-                    #           ]
-                    # print(res_)
-                    # print(ConclusionTbl.objects.select_related('secret_number_fld').get(secret_number_fld=fields[i]))
-                    print([type(i) for i in list(DocumentTbl.objects.select_related('secret_number_fld').all())])
-                    # result = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i]).values()
                     queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
+                    order_id = queryset[0].complect_fld.order_fld.order_id
+                    acc_sheet = AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0]['file_location_fld']
+                    complect = queryset[0].complect_fld
+                    documents = DocumentTbl.objects.filter(complect_fld=complect)
+                    conclusion = protocol = preciption = False
+                    for document in documents:
+                        name_doc = document.file_location_fld
+                        if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                            conclusion = name_doc
+                        elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                            protocol = name_doc
+                        else:
+                            preciption = name_doc
                     result = []
                     for query in queryset:
-                        result.append({'Файл': query.file_location_fld, 'Исполнитель': query.executor_fld.worker_name_fld, 'Секретный номер': query.secret_number_fld.secret_number_fld})
+                        result.append({'Заказ': query.complect_fld.order_fld.name_order_fld,
+                                       'Сопровод': acc_sheet,
+                                       'Заключение': conclusion,
+                                       'Протокол': protocol,
+                                       'Предписание': preciption})
                     print('result: ', result)
                     if result:
                         dict_[fields[i]] = result
@@ -56,46 +69,6 @@ def finding(request):
             return JsonResponse(json.dumps(dict_, default=str), status=200, safe=False)
         else:
             return JsonResponse(json.dumps({"errors": 'Не найдено ни одно значение, удовлетворяющее условиям поиска'}), status=200, safe=False)
-    # form = SimpleFindingForm()
-    # obj_ = serializers.serialize("json", GeneralInformationTbl.objects.all())
-    # simple_finding_list = ['gk', 'project', 'order', 'complect', 'sn', 'name', 'manufactur', 'secretnum', 'mark']
-    # print('raz')
-    # print(obj_)
-    # if is_ajax(request=request):
-    #     print('dva')
-    #     if form.is_valid():
-    #         return JsonResponse({"errors": 'все работает'}, status=200)
-    #     else:
-    #         return JsonResponse({"errors": 'не работает'}, status=400)
-        # ans = {}
-        # for element in simple_finding_dict:
-        #     ans[element] = request.POST.get(element)
-        # print('ans->', ans)
-        # form = SimpleFindingForm(request.POST)
-        # if form.is_valid():
-        #     print('three')
-        #     fields = [request.POST.get(i) for i in simple_finding_list]
-        #     print('1')
-        #     if len(fields) == 0:
-        #         print('2')
-        #         return JsonResponse({"errors": 'НЕ ЗАПОЛНЕНО НИ ОДНО ПОЛЕ'}, status=400)
-        #     print('3')
-        #     dict_ = {}
-        #     for i, field in enumerate(fields):
-        #         print('cicle')
-        #         if field:
-        #             if i == 0:
-        #                 dict_[field] = [i for i in GeneralInformationTbl.objects.filter(gk_fld=field).values('gk_fld', 'date_fld', 'department_fld')]
-        #     if len(dict_) == 0:
-        #         print('NONE')
-        #         errors = form.errors.as_json()
-        #         return JsonResponse({"errors": errors}, status=400)
-        #     else:
-        #         print('YES')
-        #         return JsonResponse({'fields': dict_}, status=200)
-        # else:
-        #     errors = form.errors.as_json()
-        #     return JsonResponse({"errors": errors}, status=400)
     form = SimpleFindingForm()
     print('four')
     return render(request, 'main/finding.html', {"form": form})
@@ -150,6 +123,9 @@ def logoutUser(request):
     logout(request)
     return redirect('login')
 
-# def log_reg(request):
-#     context = {}
-#     return render(request, 'main/register.html', context)
+
+def open_doc(request):
+    file = request.GET.get('file')
+    print(file)
+    os.startfile(file, 'open')
+    return JsonResponse(status=200)

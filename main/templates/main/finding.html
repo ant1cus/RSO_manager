@@ -25,6 +25,18 @@
 </div>
 {% block javascript %}
 <script>
+    function open_document(path) {
+        console.log(path);
+        $.ajax({
+                url: "{% url 'open_doc' %}", //url страницы
+                data: path,  // Сериализуем объект
+                type: "GET", //метод отправки
+                success: function(response) { //Данные отправлены успешно
+                    console.log('success');
+                    }
+                })
+    };
+
     function finding_data() {
         var myForm = $('#simple_request').serializeArray();
         var out = false;
@@ -60,12 +72,18 @@
                             $('#result_form').append('Результаты поиска для ' + name_req + ' ' + name_val + ':');
                             var output = '<table border="1" align="center">';
                             const data = Object.entries(answer[name_val]);
+                            var name_doc = ['Сопровод', 'Заключение', 'Протокол', 'Предписание']
                             data.forEach(([key, value], index) => {
                                 var header_table = '';
                                 var var_table = '';
                                 for (key_val in value) {
                                     header_table += '<th>' + key_val + '</th>';
-                                    var_table += '<td>' + value[key_val] + '</td>';
+                                    if (name_doc.includes(key_val)) {
+                                        var_table += '<td><button type="button" onclick="open_document(' + 1 + ')">' + key_val + '</button></td>';
+                                    }
+                                    else {
+                                        var_table += '<td>' + value[key_val] + '</td>';
+                                    }
                                     }
                                 if (index == 0) {
                                     output += '<tr><th>№</th>' + header_table + '</tr>';
