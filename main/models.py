@@ -115,13 +115,22 @@ class ComplectTbl(models.Model):
         db_table = 'complect_tbl'
 
 
+class DeviceDocumentTbl(models.Model):
+    document_fld = models.OneToOneField('DocumentTbl', models.DO_NOTHING, primary_key=True)
+    device_fld = models.ForeignKey('DeviceSnTbl', models.DO_NOTHING)
+
+    class Meta:
+        managed = False
+        db_table = 'device_document_tbl'
+        unique_together = (('document_fld', 'device_fld'),)
+
+
 class DeviceSnTbl(models.Model):
     device_sn_id = models.AutoField(primary_key=True)
     serial_number_fld = models.CharField(max_length=45)
     mark_fld = models.IntegerField(blank=True, null=True)
     third_form_fld = models.ForeignKey('ThirdFormTbl', models.DO_NOTHING, db_column='third_form_fld', blank=True, null=True)
     infocard_fld = models.ForeignKey('InfocardTbl', models.DO_NOTHING, db_column='infocard_fld', blank=True, null=True)
-    document_fld = models.ForeignKey('DocumentTbl', models.DO_NOTHING, db_column='document_fld')
     device_fld = models.ForeignKey('DeviceTbl', models.DO_NOTHING, db_column='device_fld')
 
     class Meta:

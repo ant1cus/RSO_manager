@@ -25,11 +25,14 @@
 </div>
 {% block javascript %}
 <script>
+    var list_element = [];
+
     function open_document(path) {
         console.log(path);
+        console.log(list_element[path]);
         $.ajax({
                 url: "{% url 'open_doc' %}", //url страницы
-                data: path,  // Сериализуем объект
+                data: {'file': list_element[path]},  // Сериализуем объект
                 type: "GET", //метод отправки
                 success: function(response) { //Данные отправлены успешно
                     console.log('success');
@@ -62,6 +65,7 @@
                         }
                     else {
                         var name_req = '';
+                        var number_element = 0;
                         for (name_val in answer) {
                             for (key in myForm) { //проходим циклом по массиву объектов
                                 if (myForm[key].value == name_val) {
@@ -78,12 +82,20 @@
                                 var var_table = '';
                                 for (key_val in value) {
                                     header_table += '<th>' + key_val + '</th>';
+                                    list_element[number_element] = value[key_val];
                                     if (name_doc.includes(key_val)) {
-                                        var_table += '<td><button type="button" onclick="open_document(' + 1 + ')">' + key_val + '</button></td>';
+                                        console.log(value[key_val]);
+                                        if (value[key_val]) {
+                                            var_table += `<td><button type="button" onclick="open_document(${number_element})">${key_val}</button></td>`;
+                                        }
+                                        else {
+                                            var_table += `<td>Нет документа</td>`;
+                                        }
                                     }
                                     else {
                                         var_table += '<td>' + value[key_val] + '</td>';
                                     }
+                                    number_element += 1;
                                     }
                                 if (index == 0) {
                                     output += '<tr><th>№</th>' + header_table + '</tr>';

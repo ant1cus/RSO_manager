@@ -3947,3 +3947,635 @@ ValueError: The view main.views.open_doc didn't return an HttpResponse object. I
 2022-07-11 15:55:19,137 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-07-11 15:55:23,356 django.request WARNING  Not Found: /favicon.ico
 2022-07-11 15:55:23,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:51:26,937 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 09:51:44,080 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:51:44,080 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:52:08,032 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'rso_db.document_tbl' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = queryset[0].complect_fld.order_fld.order_id
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 361, in __getitem__
+    qs._fetch_all()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'rso_db.document_tbl' doesn't exist")
+2022-07-12 09:52:08,032 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'rso_db.document_tbl' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = queryset[0].complect_fld.order_fld.order_id
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 361, in __getitem__
+    qs._fetch_all()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'rso_db.document_tbl' doesn't exist")
+2022-07-12 09:55:37,222 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 09:55:37,222 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 09:56:50,263 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:56:50,263 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:58:10,289 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 09:58:10,289 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:00:05,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:00:05,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:05:23,015 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:05:23,015 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:10:37,474 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:10:37,474 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:10:40,198 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:10:40,198 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:11:27,335 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:11:27,335 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:11:35,493 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:11:35,493 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:17:38,576 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:17:38,576 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:24,388 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:24,388 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:39,338 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:39,338 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:58,534 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:18:58,534 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:19:11,585 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:19:11,585 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:19:27,414 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:19:27,414 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:19:31,598 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:19:31,598 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:20:11,276 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:20:11,276 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:20:14,043 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:20:14,043 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:21:30,228 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:21:30,228 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:21:34,020 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:21:34,020 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:21:54,452 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:21:54,452 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:21:57,653 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:21:57,653 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:23:05,663 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:23:05,663 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 10:23:09,821 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 10:23:09,821 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:04:41,033 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:04:41,033 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:07:58,470 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:07:58,470 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:08:16,085 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:08:16,085 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:08:20,898 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:08:20,898 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:08:50,373 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:08:50,373 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:09:34,590 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:09:34,590 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:09:41,986 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:09:41,986 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:10:39,410 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:10:39,410 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:11:15,664 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:11:15,664 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:11:41,983 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:11:41,983 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:11:45,454 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:11:45,454 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:13:26,397 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:13:26,397 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:13:30,447 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:13:30,447 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:14:05,396 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:14:05,396 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:31:57,556 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:31:57,556 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:32:10,311 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:32:10,311 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:32:15,294 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:32:15,294 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:33:19,840 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:33:19,840 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:33:57,842 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:33:57,842 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:34:05,277 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:34:05,277 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not NoneType
+2022-07-12 11:36:15,169 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 11:36:16,344 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 11:36:17,088 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:36:17,088 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:36:18,950 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 129, in open_doc
+    os.startfile(0, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not int
+2022-07-12 11:36:18,950 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 129, in open_doc
+    os.startfile(0, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not int
+2022-07-12 11:37:10,619 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:37:10,619 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:37:12,685 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 129, in open_doc
+    os.startfile(0, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not int
+2022-07-12 11:37:12,685 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 129, in open_doc
+    os.startfile(0, 'open')
+TypeError: startfile: filepath should be string, bytes or os.PathLike, not int
+2022-07-12 11:37:35,814 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 11:37:36,874 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 11:37:37,511 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:37:37,511 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:37:39,676 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\MySQL\\документы\\Сопроводит СП.docx'
+2022-07-12 11:37:39,676 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\MySQL\\документы\\Сопроводит СП.docx'
+2022-07-12 11:41:21,302 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:41:21,302 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:41:23,416 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Сопроводит СП.docx'
+2022-07-12 11:41:23,416 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Сопроводит СП.docx'
+2022-07-12 11:42:17,101 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:42:17,101 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:42:19,833 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 131, in open_doc
+    return JsonResponse(status=200)
+TypeError: __init__() missing 1 required positional argument: 'data'
+2022-07-12 11:42:19,833 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 131, in open_doc
+    return JsonResponse(status=200)
+TypeError: __init__() missing 1 required positional argument: 'data'
+2022-07-12 11:43:16,372 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 11:43:17,387 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 11:43:18,672 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:43:18,672 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:43:27,083 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Заключение 1.4.docx'
+2022-07-12 11:43:27,083 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Заключение 1.4.docx'
+2022-07-12 11:44:11,375 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Протокол 1.1.docx'
+2022-07-12 11:44:11,375 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\DataBase\\RSO\\Заключения\\Протокол 1.1.docx'
+2022-07-12 11:46:28,614 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'false'
+2022-07-12 11:46:28,614 django.request ERROR    Internal Server Error: /open_doc/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 130, in open_doc
+    os.startfile(file, 'open')
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'false'
+2022-07-12 11:48:14,614 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:48:14,614 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:49:55,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 11:49:55,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 14:18:00,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:18:05,332 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 14:18:05,332 django.request WARNING  Not Found: /favicon.ico
+2022-07-12 14:39:53,261 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:39:54,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:41:10,721 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:41:11,696 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:41:37,858 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:41:38,879 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:43:12,870 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:43:13,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:43:42,558 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:43:43,683 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-12 14:44:22,203 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-12 14:44:23,232 django.utils.autoreload INFO     Watching for file changes with StatReloader

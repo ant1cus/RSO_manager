@@ -6,7 +6,7 @@ from django.contrib.auth import authenticate, login, logout
 from .form import CreateUserForm
 from .forms import SimpleFindingForm
 from django.contrib import messages
-from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl
+from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl, DeviceDocumentTbl
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 import json
@@ -39,6 +39,8 @@ def finding(request):
                     print(result)
                     if result:
                         dict_[fields[i]] = result
+                if i == 4:
+                    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld_id__serial_number_fld=fields[i])
                 if i == 7:
                     queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
                     order_id = queryset[0].complect_fld.order_fld.order_id
@@ -128,4 +130,4 @@ def open_doc(request):
     file = request.GET.get('file')
     print(file)
     os.startfile(file, 'open')
-    return JsonResponse(status=200)
+    return JsonResponse({'success': 'success'}, status=200)
