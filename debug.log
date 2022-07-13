@@ -4579,3 +4579,607 @@ FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'false'
 2022-07-12 14:43:43,683 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-07-12 14:44:22,203 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
 2022-07-12 14:44:23,232 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:06:45,470 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:06:48,232 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:06:48,232 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:06:53,509 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 41, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:06:53,509 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 41, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:08:18,016 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 41, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:08:18,016 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 41, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:09:08,510 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:09:09,928 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:09:30,504 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:09:30,504 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:09:32,449 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:09:32,449 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:09:59,894 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:10:00,923 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:10:05,241 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:10:05,241 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:10:07,211 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:10:07,211 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:10:39,710 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:10:40,801 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:10:41,384 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:10:41,384 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:10:48,873 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    queryset = DeviceDocumentTbl.object.filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:10:48,873 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    queryset = DeviceDocumentTbl.object.filter(device_fld__serial_number_fld=fields[i])
+AttributeError: type object 'DeviceDocumentTbl' has no attribute 'object'
+2022-07-13 15:14:08,714 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:14:09,874 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:14:12,143 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:14:12,143 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:14:14,079 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.complect_fld
+AttributeError: 'DeviceDocumentTbl' object has no attribute 'complect_fld'
+2022-07-13 15:14:14,079 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.complect_fld
+AttributeError: 'DeviceDocumentTbl' object has no attribute 'complect_fld'
+2022-07-13 15:15:21,166 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:15:22,297 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:15:22,939 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:15:22,939 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:15:24,408 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:15:24,408 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:16:23,266 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:16:24,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:16:25,926 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:16:25,926 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:16:27,512 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:16:27,512 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:16:43,960 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:16:45,066 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:22:20,308 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:22:20,308 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:22:23,505 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:22:23,505 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = query.document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:23:03,341 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:23:04,408 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:23:05,853 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:23:05,853 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:23:08,447 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = query.document_fld_id.complect_fld.order_fld.order_id
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:23:08,447 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = query.document_fld_id.complect_fld.order_fld.order_id
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:25:44,120 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:25:45,251 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:25:46,826 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:25:46,826 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:25:48,446 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = query.document_fld_id.complect_fld
+UnboundLocalError: local variable 'query' referenced before assignment
+2022-07-13 15:25:48,446 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = query.document_fld_id.complect_fld
+UnboundLocalError: local variable 'query' referenced before assignment
+2022-07-13 15:26:11,127 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:26:12,178 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:26:13,100 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:26:13,100 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:26:15,212 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:26:15,212 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:29:54,879 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:29:56,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:29:58,264 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:29:58,264 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:30:02,774 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:30:02,774 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:30:55,809 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:30:56,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:30:57,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:30:57,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:30:59,486 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:30:59,486 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 42, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:32:34,127 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:32:35,243 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:32:36,188 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:32:36,188 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:32:37,613 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:32:37,613 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:33:58,778 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:33:59,881 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:34:02,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:34:02,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:34:04,104 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:34:04,104 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:36:01,209 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:36:02,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:37:16,406 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:37:17,523 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:37:18,050 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:37:18,050 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:37:19,056 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:37:19,056 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:37:21,083 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:37:21,083 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:37:53,318 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:37:54,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:38:09,963 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:38:09,963 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:38:11,756 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:38:11,756 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:38:39,367 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:38:40,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:39:04,294 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:39:04,294 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:39:06,191 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:39:06,191 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:39:55,529 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:39:56,607 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:39:58,174 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:39:58,174 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:40:00,300 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:40:00,300 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:41:21,478 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:41:22,600 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:41:25,187 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:41:25,187 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:41:26,955 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:41:26,955 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 15:41:47,714 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 15:41:48,789 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 15:41:50,453 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:41:50,453 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 15:41:52,174 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    print(list(queryset[0]))
+TypeError: 'DeviceDocumentTbl' object is not iterable
+2022-07-13 15:41:52,174 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    print(list(queryset[0]))
+TypeError: 'DeviceDocumentTbl' object is not iterable
+2022-07-13 16:04:02,889 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:04:03,929 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:04:35,271 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:04:36,469 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:07:39,137 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:07:40,151 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:07:56,451 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:07:56,451 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:07:57,946 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    print(queryset[0].document_fld_id.file_location_fld)
+AttributeError: 'int' object has no attribute 'file_location_fld'
+2022-07-13 16:07:57,946 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 43, in finding
+    print(queryset[0].document_fld_id.file_location_fld)
+AttributeError: 'int' object has no attribute 'file_location_fld'
+2022-07-13 16:10:09,825 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:10:12,933 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:10:12,933 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:10:14,346 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = queryset[0].complect_fld.order_fld.order_id
+AttributeError: 'DeviceDocumentTbl' object has no attribute 'complect_fld'
+2022-07-13 16:10:14,346 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    order_id = queryset[0].complect_fld.order_fld.order_id
+AttributeError: 'DeviceDocumentTbl' object has no attribute 'complect_fld'
+2022-07-13 16:10:57,214 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:10:58,289 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:10:58,804 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:10:58,804 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:11:01,694 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 59, in finding
+    result.append({'Заказ': query.document_fld_id.complect_fld.order_fld.name_order_fld,
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:11:01,694 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 59, in finding
+    result.append({'Заказ': query.document_fld_id.complect_fld.order_fld.name_order_fld,
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:11:25,236 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:11:26,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:11:26,950 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:11:26,950 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:11:28,396 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:11:28,396 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 44, in finding
+    complect = queryset[0].document_fld_id.complect_fld
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:13:24,480 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:13:25,597 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:14:22,795 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:14:24,030 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:14:33,853 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:14:35,032 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:14:40,003 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:14:40,003 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:14:41,783 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 60, in finding
+    result.append({'Заказ': query.document_fld_id.complect_fld.order_fld.name_order_fld,
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:14:41,783 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 60, in finding
+    result.append({'Заказ': query.document_fld_id.complect_fld.order_fld.name_order_fld,
+AttributeError: 'int' object has no attribute 'complect_fld'
+2022-07-13 16:15:04,970 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-13 16:15:06,003 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-13 16:15:06,578 django.request WARNING  Not Found: /favicon.ico
+2022-07-13 16:15:06,578 django.request WARNING  Not Found: /favicon.ico

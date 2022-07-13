@@ -25,11 +25,9 @@ def finding(request):
     if is_ajax(request=request):
         simple_finding_list = ['gk', 'project', 'order', 'complect', 'sn', 'name', 'manufactur', 'secretnum', 'mark']
         fields = [request.POST.get(i) for i in simple_finding_list]
-        print(fields)
-        print(len(fields))
+        result = []
         dict_ = {}
         for i in [7, 4, 8, 2, 3, 5, 1, 0, 6]:
-            print(i)
             if fields[i]:
                 if i == 0:
                     result = [i for i in GeneralInformationTbl.objects.filter(gk_fld=fields[i]).values('gk_fld',
@@ -40,7 +38,32 @@ def finding(request):
                     if result:
                         dict_[fields[i]] = result
                 if i == 4:
-                    queryset = DeviceDocumentTbl.object.select_related().filter(device_fld_id__serial_number_fld=fields[i])
+                    print(fields[i])
+                    queryset = DeviceDocumentTbl.objects.select_related().filter(device_fld__serial_number_fld=str(fields[i]))
+                    print(queryset[0].document_fld.file_location_fld)
+                    complect = queryset[0].document_fld.complect_fld
+                    order_id = queryset[0].document_fld.complect_fld.order_fld.order_id
+                    documents = DocumentTbl.objects.filter(complect_fld=complect)
+                    acc_sheet = \
+                        AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+                            'file_location_fld']
+                    conclusion = protocol = preciption = False
+                    for document in documents:
+                        name_doc = document.file_location_fld
+                        if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                            conclusion = name_doc
+                        elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                            protocol = name_doc
+                        else:
+                            preciption = name_doc
+                    for query in queryset:
+                        result.append({'Заказ': query.document_fld.complect_fld.order_fld.name_order_fld,
+                                       'Сопровод': acc_sheet,
+                                       'Заключение': conclusion,
+                                       'Протокол': protocol,
+                                       'Предписание': preciption})
+                    if result:
+                        dict_[fields[i]] = result
                 if i == 7:
                     queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
                     order_id = queryset[0].complect_fld.order_fld.order_id
@@ -56,14 +79,12 @@ def finding(request):
                             protocol = name_doc
                         else:
                             preciption = name_doc
-                    result = []
                     for query in queryset:
                         result.append({'Заказ': query.complect_fld.order_fld.name_order_fld,
                                        'Сопровод': acc_sheet,
                                        'Заключение': conclusion,
                                        'Протокол': protocol,
                                        'Предписание': preciption})
-                    print('result: ', result)
                     if result:
                         dict_[fields[i]] = result
         print(dict_)

@@ -116,13 +116,13 @@ class ComplectTbl(models.Model):
 
 
 class DeviceDocumentTbl(models.Model):
-    document_fld = models.OneToOneField('DocumentTbl', models.DO_NOTHING, primary_key=True)
-    device_fld = models.ForeignKey('DeviceSnTbl', models.DO_NOTHING)
+    device_document_id = models.AutoField(primary_key=True)
+    document_fld = models.ForeignKey('DocumentTbl', models.DO_NOTHING, db_column='document_fld')
+    device_fld = models.ForeignKey('DeviceSnTbl', models.DO_NOTHING, db_column='device_fld')
 
     class Meta:
         managed = False
         db_table = 'device_document_tbl'
-        unique_together = (('document_fld', 'device_fld'),)
 
 
 class DeviceSnTbl(models.Model):
