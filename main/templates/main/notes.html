@@ -1,0 +1,14 @@
+<div class="fieldsetstyle-cssave">
+  <form action="" method="post" class="findform" id="notes">
+    {% csrf_token %}
+    <fieldset>
+      <legend align="center">Заметки</legend>
+        {% for field in form %}
+            <div class="form-row">
+                {{field}}
+            </div>
+        {% endfor %}
+      <button type="button" id="simple_btn" onclick="finding_data()">Найти информацию</button>
+    </fieldset>
+  </form>
+</div>

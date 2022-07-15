@@ -40,53 +40,53 @@ def finding(request):
                 if i == 4:
                     print(fields[i])
                     queryset = DeviceDocumentTbl.objects.select_related().filter(device_fld__serial_number_fld=str(fields[i]))
-                    print(queryset[0].document_fld.file_location_fld)
-                    complect = queryset[0].document_fld.complect_fld
-                    order_id = queryset[0].document_fld.complect_fld.order_fld.order_id
-                    documents = DocumentTbl.objects.filter(complect_fld=complect)
-                    acc_sheet = \
-                        AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
-                            'file_location_fld']
-                    conclusion = protocol = preciption = False
-                    for document in documents:
-                        name_doc = document.file_location_fld
-                        if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
-                            conclusion = name_doc
-                        elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
-                            protocol = name_doc
-                        else:
-                            preciption = name_doc
                     for query in queryset:
-                        result.append({'Заказ': query.document_fld.complect_fld.order_fld.name_order_fld,
-                                       'Сопровод': acc_sheet,
-                                       'Заключение': conclusion,
-                                       'Протокол': protocol,
-                                       'Предписание': preciption})
+                        print(query.document_fld.file_location_fld)
+                        complect = query.document_fld.complect_fld
+                        order_id = query.document_fld.complect_fld.order_fld.order_id
+                        documents = DocumentTbl.objects.filter(complect_fld=complect)
+                        acc_sheet = \
+                            AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+                                'file_location_fld']
+                        conclusion = protocol = preciption = False
+                        for document in documents:
+                            name_doc = document.file_location_fld
+                            if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                                conclusion = name_doc
+                            elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                                protocol = name_doc
+                            else:
+                                preciption = name_doc
+                            result.append({'Заказ': query.document_fld.complect_fld.order_fld.name_order_fld,
+                                           'Сопровод': acc_sheet,
+                                           'Заключение': conclusion,
+                                           'Протокол': protocol,
+                                           'Предписание': preciption})
                     if result:
                         dict_[fields[i]] = result
                 if i == 7:
                     queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
-                    order_id = queryset[0].complect_fld.order_fld.order_id
-                    acc_sheet = AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0]['file_location_fld']
-                    complect = queryset[0].complect_fld
-                    documents = DocumentTbl.objects.filter(complect_fld=complect)
-                    conclusion = protocol = preciption = False
-                    for document in documents:
-                        name_doc = document.file_location_fld
-                        if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
-                            conclusion = name_doc
-                        elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
-                            protocol = name_doc
-                        else:
-                            preciption = name_doc
                     for query in queryset:
-                        result.append({'Заказ': query.complect_fld.order_fld.name_order_fld,
-                                       'Сопровод': acc_sheet,
-                                       'Заключение': conclusion,
-                                       'Протокол': protocol,
-                                       'Предписание': preciption})
-                    if result:
-                        dict_[fields[i]] = result
+                        order_id = queryset[0].complect_fld.order_fld.order_id
+                        acc_sheet = AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0]['file_location_fld']
+                        complect = queryset[0].complect_fld
+                        documents = DocumentTbl.objects.filter(complect_fld=complect)
+                        conclusion = protocol = preciption = False
+                        for document in documents:
+                            name_doc = document.file_location_fld
+                            if re.findall('заключение', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                                conclusion = name_doc
+                            elif re.findall('протокол', name_doc.rpartition('\\')[2].partition('.')[0].lower()):
+                                protocol = name_doc
+                            else:
+                                preciption = name_doc
+                            result.append({'Заказ': query.complect_fld.order_fld.name_order_fld,
+                                           'Сопровод': acc_sheet,
+                                           'Заключение': conclusion,
+                                           'Протокол': protocol,
+                                           'Предписание': preciption})
+                        if result:
+                            dict_[fields[i]] = result
         print(dict_)
         if dict_:
             return JsonResponse(json.dumps(dict_, default=str), status=200, safe=False)

@@ -5183,3 +5183,108 @@ AttributeError: 'int' object has no attribute 'complect_fld'
 2022-07-13 16:15:06,003 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-07-13 16:15:06,578 django.request WARNING  Not Found: /favicon.ico
 2022-07-13 16:15:06,578 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:24:01,571 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-15 10:24:03,534 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:24:03,534 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:24:21,786 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:24:21,786 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:24:59,766 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:24:59,766 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:25:02,279 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:25:02,279 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:25:29,493 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:25:29,493 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:25:34,977 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:25:34,977 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 48, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:27:34,153 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-15 10:27:35,281 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-15 10:27:35,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:27:35,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:27:48,706 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 49, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:27:48,706 django.request ERROR    Internal Server Error: /finding/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 49, in finding
+    AccompainingSheetTbl.objects.filter(order_fld=order_id).values('file_location_fld')[0][
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 362, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-07-15 10:30:33,691 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 10:30:33,691 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 11:01:30,256 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-15 11:01:31,321 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-15 11:43:08,773 django.request WARNING  Not Found: /favicon.ico
+2022-07-15 11:43:08,773 django.request WARNING  Not Found: /favicon.ico
