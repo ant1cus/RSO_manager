@@ -25,8 +25,15 @@
 </div>
 <div id="notes">
 </div>
+<div id="notes_add">
+</div>
+{% endblock %}
 {% block javascript %}
 <script>
+    $("#add_note").on("click", function(){
+        $("#notes_add").load('/notes');
+    })
+
     var list_element = [];
 
     function open_document(path) {
@@ -40,14 +47,12 @@
                     console.log('success');
                     }
                 })
-    };
+    }
 
     function finding_data() {
         var myForm = $('#simple_request').serializeArray();
         var out = false;
-        var dict_name = {'gk': 'гос. контракт', 'project': 'проект', 'order': 'заказ', 'complect': 'комплект',
-         'sn': 'серийный номер', 'name': 'модель', 'manufactur': 'изготовитель', 'secretnum': 'секретный номер',
-          'mark': 'марка'};
+        var dict_name = {'sn': 'серийный номер', 'secretnum': 'секретный номер', 'mark': 'марка'};
         for (key in myForm) { //проходим циклом по массиву объектов
             if (myForm[key].value && myForm[key].name != 'csrfmiddlewaretoken') {
                 out = true;
@@ -77,50 +82,67 @@
                                 }
                             $('#result_form').append('Результаты поиска для ' + name_req + ' ' + name_val + ':');
                             var output = '<table border="1" align="center">';
+                            var output_notes = '<table border="1" align="center">';
+                            var output_notes_data = ['Запрос', 'Дата', 'ФИО', 'Организация', 'Телефон', 'Вопрос', 'Дополнения'];
+                            output_notes += '<tr>';
+                            output_notes_data.forEach(element => output_notes += '<th>' + element + '</th>');
+                            output_notes += '</tr>';
                             const data = Object.entries(answer[name_val]);
-                            var name_doc = ['Сопровод', 'Заключение', 'Протокол', 'Предписание']
+                            var name_doc = ['Сопровод', 'Заключение', 'Протокол', 'Предписание'];
                             data.forEach(([key, value], index) => {
                                 var header_table = '';
                                 var var_table = '';
                                 for (key_val in value) {
-                                    header_table += '<th>' + key_val + '</th>';
-                                    list_element[number_element] = value[key_val];
-                                    if (name_doc.includes(key_val)) {
-                                        console.log(value[key_val]);
+                                    if (key_val == 'Заметки') {
                                         if (value[key_val]) {
-                                            var_table += `<td><button type="button" onclick="open_document(${number_element})">${key_val}</button></td>`;
-                                        }
-                                        else {
-                                            var_table += `<td>Нет документа</td>`;
+                                            output_notes += '<tr>';
+                                            Object.entries(value[key_val]).forEach(([notes_key, notes_val]) => {
+                                                console.log(notes_val);
+                                                output_notes += '<tr>'
+                                                for (nk in notes_val) {
+                                                    if (notes_val[nk]) {
+                                                        output_notes += '<td>' + notes_val[nk] + '</td>';
+                                                    }
+                                                    else {
+                                                        output_notes += '<td>-</td>';
+                                                    }
+                                                }
+                                                output_notes += '</tr>'
+                                            })
+                                            output_notes += '</tr>';
                                         }
                                     }
                                     else {
-                                        var_table += '<td>' + value[key_val] + '</td>';
-                                    }
-                                    number_element += 1;
+                                        header_table += '<th>' + key_val + '</th>';
+                                        list_element[number_element] = value[key_val];
+                                        if (name_doc.includes(key_val)) {
+                                            if (value[key_val]) {
+                                                var_table += `<td><button type="button" onclick="open_document(${number_element})">${key_val}</button></td>`;
+                                            }
+                                            else {
+                                                var_table += `<td>Нет документа</td>`;
+                                            }
+                                        }
+                                        else {
+                                            var_table += '<td>' + value[key_val] + '</td>';
+                                        }
+                                        number_element += 1;
+                                        }
                                     }
                                 if (index == 0) {
                                     output += '<tr><th>№</th>' + header_table + '</tr>';
                                     }
                                 output += '<tr><td>' + (index + 1) + '</td>' + var_table + '</tr>';
                                 })
+                            output_notes += '</table>';
                             output += '</table>';
+                            $('#notes').html("");
+                            if (Object.entries(answer[name_val])[0][1]['Заметки'].length > 0) {
+                                console.log('есть заметка');
+                                $('#notes').append(output_notes);
+                            }
                             $('#result_form').append(output);
                         }
-<!--                        var transform = {"tag":"table", "align":"center", "border":"outset", "children":[-->
-<!--                                {"tag":"tr","children":[-->
-<!--                                    {"tag":"th","html":'Гос. контракт'},-->
-<!--                                    {"tag":"th","html":'Дата'},-->
-<!--                                    {"tag":"th","html":'Департамент'}-->
-<!--                                ]},-->
-<!--                                {"tag":"tr","children":[-->
-<!--                                    {"tag":"td","html":"${gk_fld}"},-->
-<!--                                    {"tag":"td","html":"${date_fld}"},-->
-<!--                                    {"tag":"td","html":"${department_fld}"}-->
-<!--                                ]}-->
-<!--                        ]};-->
-<!--                        console.log(typeof($.parseHTML(json2html.transform(answer[name_val],transform))));-->
-<!--                        $('#result_form').append($.parseHTML(json2html.transform(answer[name_val],transform)));-->
                     }
                 },
                 error: function(response) { // Данные не отправлены
@@ -133,5 +155,4 @@
             alert('Заполните хотя бы один параметр для поиска!');
         }
 </script>
-{% endblock %}
 {% endblock %}

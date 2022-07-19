@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="/finding">Поиск</a></li>
                 <li><a href="/loading">Загрузка данных</a></li>
-                <li><a href="/notes">Создать заметку</a></li>
+                <li id="note"><a id="add_note">Создать заметку</a></li>
                 <li><a href="/about">О нас</a></li>
             </ul>
         </div>
@@ -50,4 +50,12 @@
 <!--    <script src="{% static 'js/script.js'%}"></script>-->
     {% block javascript %}{% endblock %}
 </body>
+<script>
+    if (window.location.pathname == '/finding/') {
+        $("#note").show();  // show
+    }
+    else {
+        $("#note").hide();  // hide
+    }
+</script>
 </html>

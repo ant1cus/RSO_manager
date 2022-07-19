@@ -6,7 +6,8 @@ from django.contrib.auth import authenticate, login, logout
 from .form import CreateUserForm
 from .forms import SimpleFindingForm
 from django.contrib import messages
-from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl, DeviceDocumentTbl
+from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl,\
+    DeviceDocumentTbl, NotesTbl
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 import json
@@ -23,25 +24,26 @@ def greetings(request):
 
 def finding(request):
     if is_ajax(request=request):
-        simple_finding_list = ['gk', 'project', 'order', 'complect', 'sn', 'name', 'manufactur', 'secretnum', 'mark']
+        simple_finding_list = ['sn', 'secretnum', 'mark']
         fields = [request.POST.get(i) for i in simple_finding_list]
         result = []
         dict_ = {}
-        for i in [7, 4, 8, 2, 3, 5, 1, 0, 6]:
+        note = []
+        note_fld = {'question_number_fld': 'Запрос', 'date_fld': 'Дата', 'name_fld': 'ФИО',
+                    'organization_fld': 'Организация', 'telephone_fld': 'Номер тел.', 'question_fld': 'Вопрос',
+                    'add_notes_fld': 'Дополнительно'}
+        for i in range(0, 3):
             if fields[i]:
                 if i == 0:
-                    result = [i for i in GeneralInformationTbl.objects.filter(gk_fld=fields[i]).values('gk_fld',
-                                                                                                       'date_fld',
-                                                                                                       'department_fld')
-                              ]
-                    print(result)
-                    if result:
-                        dict_[fields[i]] = result
-                if i == 4:
-                    print(fields[i])
                     queryset = DeviceDocumentTbl.objects.select_related().filter(device_fld__serial_number_fld=str(fields[i]))
                     for query in queryset:
-                        print(query.document_fld.file_location_fld)
+                        if query.device_fld.notes_fld:
+                            query_notes = NotesTbl.objects.filter(question_number_fld=str(fields[i])).values()
+                            for element in list(query_notes):
+                                note_dict = {}
+                                for el in note_fld:
+                                    note_dict[note_fld[el]] = element[el]
+                                note.append(note_dict)
                         complect = query.document_fld.complect_fld
                         order_id = query.document_fld.complect_fld.order_fld.order_id
                         documents = DocumentTbl.objects.filter(complect_fld=complect)
@@ -57,14 +59,15 @@ def finding(request):
                                 protocol = name_doc
                             else:
                                 preciption = name_doc
-                            result.append({'Заказ': query.document_fld.complect_fld.order_fld.name_order_fld,
-                                           'Сопровод': acc_sheet,
-                                           'Заключение': conclusion,
-                                           'Протокол': protocol,
-                                           'Предписание': preciption})
+                        result.append({'Заказ': query.document_fld.complect_fld.order_fld.name_order_fld,
+                                       'Сопровод': acc_sheet,
+                                       'Заключение': conclusion,
+                                       'Протокол': protocol,
+                                       'Предписание': preciption,
+                                       'Заметки': note})
                     if result:
                         dict_[fields[i]] = result
-                if i == 7:
+                if i == 1:
                     queryset = DocumentTbl.objects.select_related().filter(secret_number_fld__secret_number_fld=fields[i])
                     for query in queryset:
                         order_id = queryset[0].complect_fld.order_fld.order_id
@@ -87,13 +90,11 @@ def finding(request):
                                            'Предписание': preciption})
                         if result:
                             dict_[fields[i]] = result
-        print(dict_)
         if dict_:
             return JsonResponse(json.dumps(dict_, default=str), status=200, safe=False)
         else:
             return JsonResponse(json.dumps({"errors": 'Не найдено ни одно значение, удовлетворяющее условиям поиска'}), status=200, safe=False)
     form = SimpleFindingForm()
-    print('four')
     return render(request, 'main/finding.html', {"form": form})
 
 
@@ -152,3 +153,10 @@ def open_doc(request):
     print(file)
     os.startfile(file, 'open')
     return JsonResponse({'success': 'success'}, status=200)
+
+
+def notes(request):
+
+    notes_list = ['question_number_fld', 'date_fld', 'name_fld', 'organization_fld', 'telephone_fld',
+                  'question_fld', 'add_notes_fld']
+    return render(request, 'main/notes.html')

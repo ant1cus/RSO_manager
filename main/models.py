@@ -2,18 +2,12 @@ from django.db import models
 
 
 class SimpleFinding(models.Model):
-    gk = models.CharField(max_length=30, null=True, blank=True)
-    project = models.CharField(max_length=30, null=True, blank=True)
-    order = models.CharField(max_length=30, null=True, blank=True)
-    complect = models.CharField(max_length=30, null=True, blank=True)
     sn = models.CharField(max_length=30, null=True, blank=True)
-    name = models.CharField(max_length=30, null=True, blank=True)
-    manufactur = models.CharField(max_length=30, null=True, blank=True)
     secretnum = models.CharField(max_length=30, null=True, blank=True)
     mark = models.CharField(max_length=30, null=True, blank=True)
 
     def __str__(self):
-        return '%s %s %s %s %s %s %s %s %s' % (self.gk, self.project, self.order, self.complect, self.sn, self.name, self.manufactur, self.secretnum, self.mark)
+        return '%s %s %s' % (self.sn, self.secretnum, self.mark)
 
 
 class AccompainingSheetTbl(models.Model):
@@ -132,6 +126,7 @@ class DeviceSnTbl(models.Model):
     third_form_fld = models.ForeignKey('ThirdFormTbl', models.DO_NOTHING, db_column='third_form_fld', blank=True, null=True)
     infocard_fld = models.ForeignKey('InfocardTbl', models.DO_NOTHING, db_column='infocard_fld', blank=True, null=True)
     device_fld = models.ForeignKey('DeviceTbl', models.DO_NOTHING, db_column='device_fld')
+    notes_fld = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -241,6 +236,21 @@ class InfocardTbl(models.Model):
         db_table = 'infocard_tbl'
 
 
+class NotesTbl(models.Model):
+    notes_id = models.AutoField(primary_key=True)
+    question_number_fld = models.IntegerField(blank=True, null=True)
+    date_fld = models.DateField(blank=True, null=True)
+    name_fld = models.CharField(max_length=100, blank=True, null=True)
+    organization_fld = models.CharField(max_length=100, blank=True, null=True)
+    telephone_fld = models.SmallIntegerField(blank=True, null=True)
+    question_fld = models.TextField(blank=True, null=True)
+    add_notes_fld = models.TextField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'notes_tbl'
+
+
 class OrderTbl(models.Model):
     order_id = models.AutoField(primary_key=True)
     name_order_fld = models.CharField(max_length=100)
@@ -255,6 +265,7 @@ class OrderTbl(models.Model):
 class SecretNumberTbl(models.Model):
     secret_number_id = models.AutoField(primary_key=True)
     secret_number_fld = models.CharField(max_length=20, blank=True, null=True)
+    notes_fld = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
