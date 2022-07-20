@@ -4,7 +4,7 @@ import re
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from .form import CreateUserForm
-from .forms import SimpleFindingForm
+from .forms import SimpleFindingForm, AddNotesForm
 from django.contrib import messages
 from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl,\
     DeviceDocumentTbl, NotesTbl
@@ -156,7 +156,7 @@ def open_doc(request):
 
 
 def notes(request):
-
+    form = AddNotesForm()
     notes_list = ['question_number_fld', 'date_fld', 'name_fld', 'organization_fld', 'telephone_fld',
                   'question_fld', 'add_notes_fld']
-    return render(request, 'main/notes.html')
+    return render(request, 'main/notes.html', {"form": form})

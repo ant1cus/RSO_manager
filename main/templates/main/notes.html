@@ -1,4 +1,15 @@
-<div id="okno">
-  Всплывающее окошко!
-</div>
+<div id="modal_window">
+  <form action="" method="post" id="add_note">
+    {% csrf_token %}
+    <fieldset>
+        {% for field in form %}
+            <div>
+                {{field}}
+            </div>
+        {% endfor %}
+        <button type="button" onclick="$('#modal_window').hide();">Close</button>
+        <button type="button">Save changes</button>
+    </fieldset>
+  </form>
 
+</div>

@@ -5783,3 +5783,93 @@ ValueError: The view main.views.notes didn't return an HttpResponse object. It r
 2022-07-19 13:20:12,919 django.request WARNING  Not Found: /favicon.ico
 2022-07-19 13:23:06,696 django.request WARNING  Not Found: /favicon.ico
 2022-07-19 13:23:06,696 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:10:26,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 11:10:33,109 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:10:33,109 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:10:46,130 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:10:46,130 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:12:58,763 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:12:58,763 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:13:54,988 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:13:54,988 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:14:29,256 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:14:29,256 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:15:36,447 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:15:36,447 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:16:13,469 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:16:13,469 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:17:36,564 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:17:36,564 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:18:03,706 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:18:03,706 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:19:09,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:19:09,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:22:29,292 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:22:29,292 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:30:42,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:30:42,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:31:45,827 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:31:45,827 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:47:12,793 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 11:47:12,793 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 13:57:25,521 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 14:08:04,586 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:08:04,586 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:40:07,423 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:40:07,423 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:42:27,987 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:42:27,987 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:45:35,988 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:45:35,988 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:49:10,565 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:49:10,565 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:49:57,058 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:49:57,058 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:52:52,241 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:52:52,241 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:54:22,421 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:54:22,421 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:54:35,295 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:54:35,295 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:55:49,299 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:55:49,299 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:56:13,354 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:56:13,354 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:56:27,055 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:56:27,055 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:57:19,390 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:57:19,390 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:57:57,713 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 14:57:57,713 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:00:56,690 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:00:56,690 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:02:45,265 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:02:45,265 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:36:02,491 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-20 15:36:03,981 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 15:37:10,204 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 15:37:49,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 15:37:53,929 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:37:53,929 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:48:35,725 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:48:35,725 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:49:49,858 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 15:49:49,858 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:12:39,439 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:12:39,439 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:47:56,677 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:47:56,677 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:48:41,817 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:48:41,817 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:49:13,260 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:49:13,260 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:53:45,171 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-20 16:53:46,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 16:53:46,769 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:53:46,769 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:53:57,692 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\models.py changed, reloading.
+2022-07-20 16:53:58,801 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-20 16:54:04,744 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:54:04,744 django.request WARNING  Not Found: /favicon.ico
+2022-07-20 16:54:28,580 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-20 16:54:29,740 django.utils.autoreload INFO     Watching for file changes with StatReloader

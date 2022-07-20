@@ -10,6 +10,19 @@ class SimpleFinding(models.Model):
         return '%s %s %s' % (self.sn, self.secretnum, self.mark)
 
 
+class AddNotes(models.Model):
+    question_number = models.CharField(max_length=30)
+    date_fld = models.DateField()
+    name_fld = models.CharField(max_length=30)
+    organization_fld = models.CharField(max_length=30)
+    telephone_fld = models.CharField(max_length=30)
+    question_fld = models.CharField(max_length=30)
+    add_notes_fld = models.CharField(max_length=30)
+
+    def __str__(self):
+        return '%s %s %s %s %s %s %s' % (self.question_number, self.date_fld, self.name_fld, self.organization_fld, self.telephone_fld, self.question_fld, self.add_notes_fld)
+
+
 class AccompainingSheetTbl(models.Model):
     accompaining_sheet_id = models.AutoField(primary_key=True)
     organization_fld = models.CharField(max_length=150)
