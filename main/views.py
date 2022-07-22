@@ -15,7 +15,7 @@ from django.forms.models import model_to_dict
 
 
 def is_ajax(request):
-    return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
+    return request.headers.get('x-requested-with') == 'XMLHttpRequest'
 
 
 def greetings(request):
@@ -156,7 +156,25 @@ def open_doc(request):
 
 
 def notes(request):
-    form = AddNotesForm()
     notes_list = ['question_number_fld', 'date_fld', 'name_fld', 'organization_fld', 'telephone_fld',
                   'question_fld', 'add_notes_fld']
-    return render(request, 'main/notes.html', {"form": form})
+    if is_ajax(request=request) and request.method == 'POST':
+        form = AddNotesForm(request.POST)
+        print({i: request.POST.get(i) for i in notes_list})
+        if form.is_valid():
+            fields = {i: form.cleaned_data[i] for i in notes_list}
+            # fields = {i: (form.cleaned_data[i] if form.cleaned_data[i] else False) for i in notes_list}
+            print(fields)
+            if fields is False:
+                return JsonResponse(json.dumps({"errors": 'Ошибка'}), status=400, safe=False)
+            dict_ = NotesTbl.objects.create(**fields)
+            if dict_:
+                return JsonResponse(json.dumps({"success": 'Успешно'}), status=200, safe=False)
+            else:
+                return JsonResponse(json.dumps({"errors": 'Ошибка'}), status=400, safe=False)
+        else:
+            print(form.errors)
+            return JsonResponse(json.dumps({"errors": form.errors}), status=200, safe=False)
+    else:
+        note = AddNotesForm()
+    return render(request, 'main/notes.html', {"note": note})

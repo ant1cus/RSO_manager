@@ -1,15 +1,44 @@
 <div id="modal_window">
-  <form action="" method="post" id="add_note">
+  <form action="" method="post" id="notes_form">
     {% csrf_token %}
     <fieldset>
-        {% for field in form %}
-            <div>
-                {{field}}
+        {% for note_ in note %}
+            <div class="form-row">
+                {{ note_.label_tag }}
+                {{note_}}
+                {{ note_.errors }}
             </div>
         {% endfor %}
-        <button type="button" onclick="$('#modal_window').hide();">Close</button>
-        <button type="button">Save changes</button>
+        <button type="button" id="close_btn" onclick="$('#modal_window').hide();">Закрыть</button>
+        <button type="button" id="add_note_btn">Сохранить</button>
     </fieldset>
   </form>
 
 </div>
+<script>
+    function display_form_errors(errors, form) {
+        for (var k in errors) {
+            console.log(k);
+            console.log(errors[k]);
+            form.find('input[name=' + k + ']').after('<div class="error">' + errors[k] + '</div>');
+        }
+    }
+
+    $("#add_note_btn").on("click", function(){
+        $.ajax({
+                url: "{% url 'notes' %}", //url страницы
+                data: $('#notes_form').serializeArray(),  // Сериализуем объект
+                type: "POST", //метод отправки
+                success: function(response) { //Данные отправлены успешно
+                    $('#modal_window').find('.error').remove();
+                    var answer = $.parseJSON(response);
+                    if ('errors' in answer) {
+                        display_form_errors(answer['errors'], $('#modal_window'));
+                        }
+                    },
+                error: function(response) { // Данные не отправлены
+                    console.log('ALARM!');
+                    }
+                })
+    })
+</script>

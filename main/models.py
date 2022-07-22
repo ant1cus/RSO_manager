@@ -251,11 +251,11 @@ class InfocardTbl(models.Model):
 
 class NotesTbl(models.Model):
     notes_id = models.AutoField(primary_key=True)
-    question_number_fld = models.IntegerField(blank=True, null=True)
+    question_number_fld = models.CharField(max_length=30, blank=True, null=True)
     date_fld = models.DateField(blank=True, null=True)
     name_fld = models.CharField(max_length=100, blank=True, null=True)
     organization_fld = models.CharField(max_length=100, blank=True, null=True)
-    telephone_fld = models.SmallIntegerField(blank=True, null=True)
+    telephone_fld = models.CharField(max_length=25, blank=True, null=True)
     question_fld = models.TextField(blank=True, null=True)
     add_notes_fld = models.TextField(blank=True, null=True)
 
