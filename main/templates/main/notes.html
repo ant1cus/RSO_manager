@@ -1,20 +1,32 @@
-<div id="modal_window">
-  <form action="" method="post" id="notes_form">
-    {% csrf_token %}
-    <fieldset>
-        {% for note_ in note %}
-            <div class="form-row">
-                {{ note_.label_tag }}
-                {{note_}}
-                {{ note_.errors }}
-            </div>
-        {% endfor %}
-        <button type="button" id="close_btn" onclick="$('#modal_window').hide();">Закрыть</button>
-        <button type="button" id="add_note_btn">Сохранить</button>
-    </fieldset>
-  </form>
-
+<!-- Модальное окно -->
+<div class="modal fade" id="modal_window" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-right: 0 !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Создать заметку</h5>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post" id="notes_form">
+            {% csrf_token %}
+                <fieldset>
+                {% for note_ in note %}
+                    <div class="mt-3">
+                    {{ note_.label_tag }}
+                    {{note_}}
+                    {{ note_.errors }}
+                    </div>
+                {% endfor %}
+                </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-light me-2" id="add_note_btn">Сохранить</button>
+        <button type="button" class="btn btn-outline-light me-2" id="close_btn" onclick="$('#modal_window').hide();">Закрыть</button>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- /Модальное окно -->
 <script>
     function display_form_errors(errors, form) {
         for (var k in errors) {

@@ -8434,3 +8434,44 @@ Traceback (most recent call last):
   File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
     _mysql.connection.query(self, query)
 django.db.utils.DataError: (1265, "Data truncated for column 'question_number_fld' at row 1")
+2022-07-25 09:59:12,315 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-25 09:59:14,579 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:14,579 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:57,293 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:57,293 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:57,527 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:57,527 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:58,561 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 09:59:58,561 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:00:12,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:00:12,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:00:56,341 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:00:56,341 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:08:01,825 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:08:01,825 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:11:00,307 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:11:00,307 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:13:53,920 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:13:53,920 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:15:35,170 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:15:35,170 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:00,086 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:00,086 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:09,148 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:09,148 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:44,153 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:16:44,153 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:17:04,906 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:17:04,906 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:53,114 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:53,114 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:53,850 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:53,850 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:54,074 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:18:54,074 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:21:08,148 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:21:08,148 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:21:23,892 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:21:23,892 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:22:12,423 django.request WARNING  Not Found: /favicon.ico
+2022-07-25 10:22:12,423 django.request WARNING  Not Found: /favicon.ico
