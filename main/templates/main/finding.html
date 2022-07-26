@@ -37,7 +37,7 @@
 {% block javascript %}
 <script>
     $("#add_note").on("click", function(){
-        console.log('success');
+        $("#notes_add").load('/notes');
     })
 
     var list_element = [];
