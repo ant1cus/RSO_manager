@@ -22,7 +22,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="/finding" class="btn btn-outline-light me-2">Поиск</a></li>
             <li><a href="/loading" class="btn btn-outline-light me-2">Загрузка данных</a></li>
-            <li id="note"><a id="add_note" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#modal_window">Создать заметку</a></li>
+            <li><a id="add_note" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="/notes">Создать заметку</a></li>
             <li><a href="/about" class="btn btn-outline-light me-2">О нас</a></li>
         </ul>
 
@@ -49,37 +49,9 @@
     {% block container %} {% endblock %}
     <script src="{% static 'js/json2html.js'%}"></script>
     <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
 <!--    <script src="{% static 'js/script.js'%}"></script>-->
     {% block javascript %}{% endblock %}
-<!-- Модальное окно -->
-<div class="modal fade" id="modal_window" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-right: 0 !important;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Создать заметку</h5>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" id="notes_form">
-            {% csrf_token %}
-                <fieldset>
-                {% for note_ in note %}
-                    <div class="mt-3">
-                    {{ note_.label_tag }}
-                    {{note_}}
-                    {{ note_.errors }}
-                    </div>
-                {% endfor %}
-                </fieldset>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-light me-2" id="add_note_btn">Сохранить</button>
-        <button type="button" class="btn btn-outline-light me-2" id="close_btn" onclick="$('#modal_window').hide();">Закрыть</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Модальное окно -->
 </body>
 <script>
     if (window.location.pathname == '/finding/') {
@@ -88,5 +60,9 @@
     else {
         $("#note").hide();  // hide
     }
+    $("#btn").on("click", function(){
+        console.log('success');
+    })
+
 </script>
 </html>
