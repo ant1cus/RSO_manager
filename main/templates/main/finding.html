@@ -31,15 +31,68 @@
 </div>
 <div id="notes">
 </div>
-<div id="notes_add">
+<!-- Модальное окно -->
+<div class="modal fade modal-xl" id="modal_window" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Создать заметку</h5>
+      </div>
+      <div class="modal-body">
+          <div class="container-fluid" id="modal_div">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="add_note_btn">Сохранить</button>
+        <button type="button" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="close_btn" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- /Модальное окно -->
 {% endblock %}
 {% block javascript %}
 <script>
     $("#add_note").on("click", function(){
-        $("#notes_add").load('/notes');
+        var myModal = new bootstrap.Modal(document.getElementById('modal_window'))
+        $.ajax({
+                url: "{% url 'notes' %}", //url страницы
+                type: "GET", //метод отправки
+                success: function(response) { //Данные отправлены успешно
+                    console.log('success');
+                    $('#modal_div').html(response);
+                    }
+                })
+        myModal.show();
     })
+// Модальное окно
+    function display_form_errors(errors, form) {
+        for (var k in errors) {
+            console.log(k);
+            console.log(errors[k]);
+            form.find('input[name=' + k + ']').after('<div class="error">' + errors[k] + '</div>');
+        }
+    }
 
+    $("#add_note_btn").on("click", function(){
+        $.ajax({
+                url: "{% url 'notes' %}", //url страницы
+                data: $('#notes_form').serializeArray(),  // Сериализуем объект
+                type: "POST", //метод отправки
+                success: function(response) { //Данные отправлены успешно
+                    $('#modal_div').html(response);
+<!--                    $('#modal_window').find('.error').remove();-->
+<!--                    var answer = $.parseJSON(response);-->
+<!--                    if ('errors' in answer) {-->
+<!--                        display_form_errors(answer['errors'], $('#modal_window'));-->
+<!--                        }-->
+                    },
+                error: function(response) { // Данные не отправлены
+                    console.log('ALARM!');
+                    }
+                })
+    })
+// /Модальное окно
     var list_element = [];
 
     function open_document(path) {

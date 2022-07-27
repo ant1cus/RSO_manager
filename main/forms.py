@@ -18,7 +18,7 @@ class SimpleFindingForm(forms.Form):
 
 class AddNotesForm(forms.Form):
 
-    question_number_fld = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control item', 'placeholder': 'Номер для запроса'}), max_length=30)
+    question_number_fld = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control item', 'placeholder': 'Номер для запроса'}), min_length=5, max_length=30)
     date_fld = forms.DateField(widget=forms.DateInput(attrs={'class': 'form-control item', 'placeholder': 'Дата вопроса'}))
     name_fld = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control item', 'placeholder': 'ФИО'}), max_length=30, required=False)
     organization_fld = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control item', 'placeholder': 'Организация'}), max_length=30, required=False)
