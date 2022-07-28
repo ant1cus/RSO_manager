@@ -34,18 +34,8 @@
 <!-- Модальное окно -->
 <div class="modal fade modal-xl" id="modal_window" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Создать заметку</h5>
-      </div>
-      <div class="modal-body">
-          <div class="container-fluid" id="modal_div">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="add_note_btn">Сохранить</button>
-        <button type="button" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="close_btn" data-bs-dismiss="modal">Закрыть</button>
-      </div>
+    <div class="modal-content" id="modal_div">
+
     </div>
   </div>
 </div>
@@ -74,7 +64,8 @@
         }
     }
 
-    $("#add_note_btn").on("click", function(){
+    function send_notes (){
+        console.log('connect');
         $.ajax({
                 url: "{% url 'notes' %}", //url страницы
                 data: $('#notes_form').serializeArray(),  // Сериализуем объект
@@ -91,7 +82,7 @@
                     console.log('ALARM!');
                     }
                 })
-    })
+    }
 // /Модальное окно
     var list_element = [];
 

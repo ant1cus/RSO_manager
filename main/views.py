@@ -3,8 +3,8 @@ import re
 
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from .form import CreateUserForm
-from .forms import SimpleFindingForm, AddNotesForm
+from .form import CreateUserForm, AddNotesForm
+from .forms import SimpleFindingForm
 from django.contrib import messages
 from .models import GeneralInformationTbl, SecretNumberTbl, DocumentTbl, AccompainingSheetTbl, ComplectTbl,\
     DeviceDocumentTbl, NotesTbl
@@ -158,10 +158,15 @@ def open_doc(request):
 def notes(request):
     notes_list = ['question_number_fld', 'date_fld', 'name_fld', 'organization_fld', 'telephone_fld',
                   'question_fld', 'add_notes_fld']
+    note = AddNotesForm()
+    print(1)
+    print('Yes') if request.method == 'POST' else print('No')
     if is_ajax(request=request) and request.method == 'POST':
+        print(2)
         note = AddNotesForm(request.POST)
         print({i: request.POST.get(i) for i in notes_list})
         if note.is_valid():
+            print(3)
             fields = {i: note.cleaned_data[i] for i in notes_list}
             # fields = {i: (form.cleaned_data[i] if form.cleaned_data[i] else False) for i in notes_list}
             print(fields)
@@ -172,7 +177,8 @@ def notes(request):
                 return JsonResponse(json.dumps({"success": 'Успешно'}), status=200, safe=False)
             else:
                 return JsonResponse(json.dumps({"errors": 'Ошибка'}), status=400, safe=False)
-    else:
-        note = AddNotesForm()
+        else:
+            print(4)
+            return JsonResponse(json.dumps({"errors": 'Ошибка'}), status=400, safe=False)
     context = {"note": note}
     return render(request, 'main/notes.html', context)

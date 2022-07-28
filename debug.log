@@ -9380,3 +9380,1260 @@ Traceback (most recent call last):
 TypeError: Object of type AddNotesForm is not JSON serializable
 2022-07-27 16:28:31,096 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
 2022-07-27 16:28:32,436 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-27 16:29:01,909 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:29:01,909 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:29:22,640 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:29:22,640 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:30:09,185 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:30:09,185 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:35:21,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:35:21,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:38:06,287 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:38:06,287 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:41:10,844 django.request WARNING  Not Found: /favicon.ico
+2022-07-27 16:41:10,844 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:14:25,378 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 09:14:29,887 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:14:29,887 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:45:54,121 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:45:54,121 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:47:29,658 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:47:29,658 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:11,701 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:11,701 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:44,103 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:44,103 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:58,804 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:48:58,804 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:49:26,809 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:49:26,809 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:49:44,441 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:49:44,441 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:55:23,661 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:55:23,661 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:56:39,025 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-28 09:56:40,413 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 09:56:41,127 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:56:41,127 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:58:52,614 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-28 09:58:54,123 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 09:59:30,933 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 09:59:30,933 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:03,610 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:03,610 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:04,579 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 10:01:04,579 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 10:01:30,884 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:30,884 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:31,443 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 10:01:31,443 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 10:01:34,467 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:34,467 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 10:01:35,655 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 10:01:35,655 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:46:04,988 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:46:09,003 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:46:09,003 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:46:12,174 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:46:12,174 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:46:40,275 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\form.py changed, reloading.
+2022-07-28 11:46:41,546 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:46:50,799 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:46:50,799 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:46:55,307 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:46:55,307 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:47:34,751 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-28 11:47:35,876 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:47:48,231 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 11:47:49,721 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:48:53,494 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-28 11:48:54,556 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:48:56,472 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:48:56,472 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:48:58,196 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:48:58,196 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:49:08,617 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\forms.py changed, reloading.
+2022-07-28 11:49:09,636 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:49:24,459 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\form.py changed, reloading.
+2022-07-28 11:49:25,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:50:04,299 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:04,299 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:05,308 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:50:05,308 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:50:30,938 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:30,938 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,246 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,246 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,458 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,458 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:31,637 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 11:50:32,534 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:50:32,534 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:51:26,693 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 11:51:30,653 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 11:51:30,653 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:21:33,304 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:21:33,304 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:21:34,102 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:21:34,102 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:21:45,091 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:21:45,091 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:21:46,621 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:21:46,621 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 178, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:22:51,547 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 12:22:52,555 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:24:22,096 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:24:26,182 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:24:26,182 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:24:28,336 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 180, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:24:28,336 django.request ERROR    Internal Server Error: /notes/
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'render_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Джанго\RSO_manager\main\views.py", line 180, in notes
+    return render(request, 'main/notes.html', context)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\abykovskiy\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'render_field'. Did you forget to register or load this tag?
+2022-07-28 12:24:46,068 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 12:24:47,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:27:09,404 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:29:49,560 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\form.py changed, reloading.
+2022-07-28 12:29:50,924 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:29:51,845 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:29:51,845 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:29:55,937 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\form.py changed, reloading.
+2022-07-28 12:29:56,958 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:31:37,365 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\form.py changed, reloading.
+2022-07-28 12:31:38,383 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:31:42,308 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:31:42,308 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:33:46,131 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 12:33:47,312 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 12:33:48,044 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:33:48,044 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:35:45,247 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:35:45,247 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:59:05,737 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 12:59:05,737 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:07:54,385 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:07:54,385 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:07:55,245 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:07:55,245 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:08:09,338 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:08:09,338 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:10:40,624 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:10:40,624 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:16:10,261 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:16:10,261 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:16:30,190 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:16:30,190 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:17:01,609 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:17:01,609 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:21:34,070 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:21:34,070 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:23:49,658 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 13:23:53,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:23:53,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:24:40,643 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:24:40,643 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:24:50,906 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:24:50,906 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:27:42,660 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:27:42,660 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:29:04,410 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:29:04,410 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:30:34,650 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:30:34,650 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:06,654 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:06,654 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:23,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:23,752 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:34,814 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:31:34,814 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:32:21,210 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:32:21,210 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:32:37,595 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:32:37,595 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:01,741 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:01,741 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:18,424 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:18,424 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:27,115 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:27,115 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:36,390 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:33:36,390 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:34:27,810 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:34:27,810 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:36:41,178 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:36:41,178 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:37:22,935 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:37:22,935 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:39:36,017 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:39:36,017 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:40:15,894 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:40:15,894 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:40:51,990 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:40:51,990 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:41:33,496 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:41:33,496 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:41:57,215 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:41:57,215 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:42:37,256 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:42:37,256 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:43:22,823 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:43:22,823 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:43:46,642 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:43:46,642 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:44:19,914 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:44:19,914 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:44:45,090 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:44:45,090 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:45:34,074 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:45:34,074 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:45:46,490 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:45:46,490 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:46:05,617 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:46:05,617 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:46:44,196 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:46:44,196 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:47:39,044 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:47:39,044 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:47:45,478 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:47:45,478 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:48:41,395 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:48:41,395 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:49:13,773 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:49:13,773 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:49:32,060 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:49:32,060 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:50:29,405 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:50:29,405 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:51:14,120 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:51:14,120 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:51:24,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:51:24,356 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:52:09,560 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:52:09,560 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:52:44,559 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:52:44,559 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:53:20,130 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:53:20,130 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:53:37,461 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:53:37,461 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:54:16,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 13:54:16,479 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:02:05,061 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:02:05,061 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:02:26,771 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:02:26,771 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:16,532 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:16,532 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:51,362 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:51,362 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:52,847 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:52,847 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:54,258 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:05:54,258 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:06:33,964 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:06:33,964 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:16:16,363 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:16:16,363 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:19,683 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:19,683 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:37,957 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:37,957 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:53,339 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:19:53,339 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:20:04,055 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:20:04,055 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:21:03,360 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:21:03,360 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:21:29,740 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:21:29,740 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:57:52,757 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:57:52,757 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:58:56,185 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:58:56,185 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:59:29,214 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:59:29,214 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:59:49,983 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 14:59:49,983 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:05,160 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:05,160 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:21,821 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:21,821 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:43,990 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:00:43,990 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:01:00,213 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:01:00,213 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:02:07,767 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:02:07,767 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:02:37,792 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:02:37,792 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:03:49,009 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:03:49,009 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:04:06,455 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:04:06,455 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:05:14,564 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:05:14,564 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:06:24,587 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:06:24,587 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:07:59,117 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:07:59,117 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:08:21,405 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:08:21,405 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:08:47,311 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:08:47,311 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:09:01,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:09:01,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:10:00,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:10:00,879 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:11:32,096 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:11:32,096 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:14:03,571 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:14:03,571 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:10,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:10,974 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:44,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:44,629 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:51,921 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:15:51,921 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:20:01,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:20:08,465 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:20:08,465 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:21:53,863 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:21:53,863 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:24:10,533 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:24:10,533 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:24:38,113 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:24:38,113 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:25:10,521 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:25:10,521 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:25:36,351 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:25:37,686 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:25:38,385 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:25:38,385 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:26:46,106 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:26:47,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:26:48,139 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:26:48,139 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:27:03,176 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:27:03,176 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:27:26,579 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:27:27,854 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:27:33,076 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:27:33,076 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:28:35,532 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:28:36,745 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:28:37,406 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:28:37,406 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:29:15,367 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:29:15,367 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:33:34,853 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:33:34,853 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:34:52,891 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:34:52,891 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:35:15,304 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:35:15,304 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:35:17,075 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:35:17,075 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:36:12,600 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:36:12,600 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:39:25,550 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:39:26,648 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:39:30,015 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:39:30,015 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:40:42,187 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:40:43,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:40:44,264 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:40:44,264 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:40:46,150 django.request WARNING  Bad Request: /notes/
+2022-07-28 15:40:46,150 django.request WARNING  Bad Request: /notes/
+2022-07-28 15:41:07,652 django.utils.autoreload INFO     D:\Джанго\RSO_manager\main\views.py changed, reloading.
+2022-07-28 15:41:08,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-07-28 15:41:11,997 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:41:11,997 django.request WARNING  Not Found: /favicon.ico
+2022-07-28 15:41:13,777 django.request WARNING  Bad Request: /notes/
+2022-07-28 15:41:13,777 django.request WARNING  Bad Request: /notes/

@@ -1,43 +1,50 @@
 <!-- Модальное окно -->
-<form action="" method="post" id="notes_form">
-{% csrf_token %}
-<fieldset>
-    <div class="container-fluid d-grid gap-3 align-items-center">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mt-3 d-grid gap-3">
-            <div class="text-end d-flex flex-wrap">
-        {{ note.question_number_fld}}
-        {{ note.question_number_fld.errors }}
+<div class="modal-header">
+    <h5 class="modal-title">Создать заметку</h5>
+</div>
+<div class="modal-body">
+    <div class="container-fluid">
+        <form action="" method="POST" id="notes_form" class="g-3 needs-validation container-fluid">
+            {% csrf_token %}
+            <div class="row border">
+                <div class="col mx-2 my-2">
+                    {{ note.question_number_fld }}
+                </div>
+<!--                <div class="valid-tooltip">Все хорошо!</div>-->
+<!--                <div class="invalid-tooltip">Всё плохо!</div>-->
+                <div class="invalid-feedback">{{ note.question_number_fld.errors }}</div>
+                <div class="col mx-2 my-2">
+                    {{ note.date_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.date_fld.errors }}</div>
+                <div class="col mx-2 my-2">
+                    {{ note.name_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.name_fld.errors }}</div>
+                <div class="col mx-2 my-2">
+                    {{ note.organization_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.organization_fld.errors }}</div>
+                <div class="col mx-2 my-2">
+                    {{ note.telephone_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.telephone_fld.errors }}</div>
             </div>
-            <div class="text-end d-flex flex-wrap">
-        {{ note.date_fld}}
-        {{ note.date_fld.errors }}
+            <div class="row border">
+                <div class="col mx-2 my-2">
+                    {{ note.question_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.question_fld.errors }}</div>
+                <div class="col mx-2 my-2">
+                    {{ note.add_notes_fld }}
+                </div>
+                <div class="invalid-feedback">{{ note.add_notes_fld.errors }}</div>
             </div>
-            <div class="text-end d-flex flex-wrap">
-        {{ note.name_fld}}
-        {{ note.name_fld.errors }}
-            </div>
-            <div class="text-end d-flex flex-wrap">
-        {{ note.organization_fld}}
-        {{ note.organization_fld.errors }}
-            </div>
-            <div class="text-end d-flex flex-wrap">
-        {{ note.telephone_fld}}
-        {{ note.telephone_fld.errors }}
-            </div>
-        </div>
+        </form>
     </div>
-    <div class="container-fluid d-grid gap-3 align-items-center">
-        <div class="d-flex flex-wrap d-grid gap-3 align-items-center justify-content-center">
-            <div class="text-end d-flex flex-wrap0" style="flex: 1;">
-        {{ note.question_fld}}
-        {{ note.question_fld.errors }}
-            </div>
-            <div class="text-end d-flex flex-wrap" style="flex: 1;">
-        {{ note.add_notes_fld}}
-        {{ note.add_notes_fld.errors }}
-            </div>
-        </div>
-    </div>
-</fieldset>
-</form>
+</div>
+<div class="modal-footer">
+    <button type="submit" form="notes_form" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="add_note_btn" onclick="send_notes()">Сохранить</button>
+    <button type="submit" class="mb-2 btn btn-lg rounded-4 text-white mt-3" style="background-color: #134361;" id="close_btn" data-bs-dismiss="modal">Закрыть</button>
+</div>
 <!-- /Модальное окно -->
